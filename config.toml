@@ -1,0 +1,11 @@
+# Site settings
+baseurl = "https://ningxxu.com"
+languageCode = "en-us"
+sectionPagesMenu = "main"
+theme = "frances"
+
+[params]
+	name = "ning"
+	description = "ning"
+	email = "ninginthenetherlands@gmail.com"
+	author = "ning"
