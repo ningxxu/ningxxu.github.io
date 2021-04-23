@@ -1,1 +1,5 @@
++++
+title = "home"
++++
+
 I graduated as [product designer](https://cargocollective.com/ningxxu), worked mostly [for the internet](https://www.linkedin.com/in/ningxxu/), and nowadays I parent.
