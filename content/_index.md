@@ -1,10 +1,10 @@
-🍵 Hallo, my name is ning and this is my internet home base.
+🍵 Hallo, my name is ning and this is my internet home base
 
 
 
-I studied how to [design things][old-portfolio-url], and have been [building products on the internet][linkedin-url].
+I studied how to [design things][old-portfolio-url], and have been [building products on the internet][linkedin-url]
 
-These days I also parent, see: [Blog][blog-url].
+These days I also parent, see: [Blog][blog-url]
 
 ---
 
