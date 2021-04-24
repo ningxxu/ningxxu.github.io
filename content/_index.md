@@ -1,7 +1,7 @@
 ☀️🧃 Hello, my name is ning, and this is my home base on the internet.
 
 
-I studied how to [design things][old-portfolio-url], and have been [building digital products][linkedin-url].
+I studied how to [design things][old-portfolio-url], and then I've been [building digital products][linkedin-url].
 
 These days I also parent, see: [Blog][blog-url].
 
