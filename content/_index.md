@@ -4,7 +4,7 @@
 
 I studied how to [design things][old-portfolio-url], and have been [building products on the internet][linkedin-url].
 
-These days I also parent and document it in this [blog][blog-url].
+These days I also parent and document it in: [Blog][blog-url].
 
 ---
 
