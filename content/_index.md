@@ -2,7 +2,7 @@
 
 
 
-I studied how to [design things][old-portfolio-url], and now I work on [building products on the internet][linkedin-url].
+I studied how to [design things][old-portfolio-url], and have been [building products on the internet][linkedin-url].
 
 These days I also parent and document it in this [blog][blog-url].
 
@@ -10,7 +10,7 @@ These days I also parent and document it in this [blog][blog-url].
 
 🐻‍❄️ made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], hosted on [netlify][netlify-url]
 
-📬 wanna build product together? [mail me](mailto:ningxu1234567@gmail.com)
+📬 for freelance gigs in product management, data analysis and user research, [mail me](mailto:ninginthenetherlands@gmail.com)
 
 
 [old-portfolio-url]: https://cargocollective.com/ningxxu/
