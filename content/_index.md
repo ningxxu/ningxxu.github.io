@@ -2,18 +2,18 @@
 
 
 
-I graduated as [product designer][old-portfolio-url], worked mostly [for the internet][linkedin-url].
+I studied how to [design things][old-portfolio-url], and am working mostly [for the internet][linkedin-url].
 
-These days I parent and I [document][parent-blog-url] about it.
+These days I also parent and document it in this [blog][blog-url].
 
 ---
 
-🐻‍❄️ made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], and hosted on [netlify][netlify-usl]
+🐻‍❄️ made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], hosted on [netlify][netlify-url]
 
 
 [old-portfolio-url]: https://cargocollective.com/ningxxu/
 [linkedin-url]: https://www.linkedin.com/in/ningxxu/
-[parent-blog-url]: /blog/
+[blog-url]: /blog/
 [hugo-url]: https://gohugo.io/
 [hugo-bear-url]: https://github.com/janraasch/hugo-bearblog/
-[netlify-usl]: https://www.netlify.com/
+[netlify-url]: https://www.netlify.com/
