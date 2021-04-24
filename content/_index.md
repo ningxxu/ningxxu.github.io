@@ -1,4 +1,4 @@
-🍵 Hallo, my name is ning and this is my internet home base
+🧃 Hello, my name is ning and this is my internet home base
 
 
 
