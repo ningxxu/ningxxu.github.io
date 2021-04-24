@@ -1,10 +1,10 @@
-👋 Hallo, my name is ning and this is my home on the internet.
+👋 Hallo, my name is ning and this is my internet home base.
 
 
 
 I graduated as [product designer][old-portfolio-url], worked mostly [for the internet][linkedin-url].
 
-These days I parent and [document][parent-blog-url] it.
+These days I parent and I [document][parent-blog-url] about it.
 
 ---
 
