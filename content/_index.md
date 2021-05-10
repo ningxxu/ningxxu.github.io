@@ -1,13 +1,13 @@
-☀️🧃 Hello, my name is ning, and this is my home base on the internet.
+☀️🧃 Hello, my name is ning, and I am [a freelance product manager][linkedin-url].
 
 
-I studied how to [design things][old-portfolio-url], and after that I have been [building digital products][linkedin-url].
+I studied how to [design things][old-portfolio-url], and after that I have been building digital products.
 
 These days I also parent, see: [Blog][blog-url].
 
 &nbsp;
 
-📬 For freelance product management, research and analysis gigs, [mail me](mailto:ninginthenetherlands@gmail.com).
+📬 For freelance product gigs, [mail me](mailto:ninginthenetherlands@gmail.com).
 
 &nbsp;
 
