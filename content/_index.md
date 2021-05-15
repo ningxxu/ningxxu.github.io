@@ -6,9 +6,9 @@ I am a [freelance product manager][linkedin-url], working with product teams in 
 &nbsp;
 
 
-🖤 I studied [design][old-portfolio-url], and I am on the way to become a maker.
+👩‍🌾 I studied [design][old-portfolio-url], now on the way to become a maker.
 
-I also parent these days, and [document][blog-url] with doodling, writing, and data visualisation.
+These days I also parent, and [document][blog-url] with doodling, writing, and data visualisation.
 
 
 &nbsp;
