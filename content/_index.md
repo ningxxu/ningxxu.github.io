@@ -8,16 +8,16 @@ I am a [freelance product manager][linkedin-url], working with product teams in 
 
 👩‍🌾 I studied [design][old-portfolio-url], now on the way to become a maker.
 
-These days I also parent, and [document][blog-url] with doodling, writing, and data visualisation.
+These days I also parent, and [document][blog-url] it with doodling, writing, and data visualisation.
 
 
 &nbsp;
 
 
-📬 [Drop me a mail](mailto:ninginthenetherlands@gmail.com), if you're interested in building products together.
+📬 [Drop me a mail](mailto:ninginthenetherlands@gmail.com), if you're interested in building products together, or just to say hi.
 
 ---
-made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], hosted on [netlify][netlify-url]
+🐻‍❄️ made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], hosted on [netlify][netlify-url]
 
 
 [old-portfolio-url]: https://cargocollective.com/ningxxu/
