@@ -1,15 +1,12 @@
-☀️🧃 Hello, my name is ning.
-
-I am a [freelance product manager][linkedin-url], working with product teams in all stages.
-
+👩‍🌾🧃 Hello, my name is ning.
 
 &nbsp;
 
+☀️ During the day I'm a [freelance product manager][linkedin-url], working with teams in all stages.
 
-👩‍🌾 I studied [design][old-portfolio-url], now on the way to become a maker.
+🌙  I'm a maker otherwise and I studied [design][old-portfolio-url].
 
-These days I also parent, and [document][blog-url] it with doodling, writing, and data visualisation.
-
+These days I also parent, and document in this [Blog][blog-url] with doodling, data, and writing.
 
 &nbsp;
 
