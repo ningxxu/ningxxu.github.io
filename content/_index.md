@@ -4,7 +4,7 @@
 
 ☀️ During the day I'm a [freelance product manager][linkedin-url], working with teams in all stages.
 
-🌙  I'm a maker otherwise and I studied [design][old-portfolio-url].
+🌙 I'm a [maker][old-portfolio-url] otherwise.
 
 These days I also parent, and document in this [Blog][blog-url] with doodling, data, and writing.
 
