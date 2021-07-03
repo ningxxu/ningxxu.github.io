@@ -2,16 +2,15 @@
 
 &nbsp;
 
-☀️ During the day I'm a [freelance product manager][linkedin-url], working with teams in all stages.
+☀️ During the day I am a [freelance product manager][linkedin-url], working with teams in all stages.
 
-🌙 I'm a [maker][old-portfolio-url] otherwise.
+🌙 Otherwise, I am a [maker][old-portfolio-url], creating random and fun stuff.
 
-These days I also parent, and document in this [Blog][blog-url] with doodling, data, and writing.
+📬 If you'd like to build things together, or just to say hi, please [drop me a mail](mailto:ninginthenetherlands@gmail.com).
 
 &nbsp;
 
-
-📬 [Drop me a mail](mailto:ninginthenetherlands@gmail.com), if you're interested in building products together, or just to say hi.
+✍️ On a side note, these days I also parent, and I document with writing, data, and doodling >> [Blog][blog-url]
 
 ---
 🐻‍❄️ made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], hosted on [netlify][netlify-url]
