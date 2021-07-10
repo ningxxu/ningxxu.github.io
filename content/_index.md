@@ -1,4 +1,4 @@
-👩‍🌾🧃 Hello, my name is ning.
+Hello, my name is ning.
 
 &nbsp;
 
