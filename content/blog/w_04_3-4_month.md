@@ -3,7 +3,7 @@ title = "3-4 month"
 date = "2020-07-12"
 description = "3-4 month"
 tags = [
-    "writing",
+    "p_text",
 ]
 +++
 
