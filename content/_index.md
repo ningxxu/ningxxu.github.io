@@ -4,7 +4,7 @@ Hello, my name is ning.
 
 🔎 During the day I am a [product manager][linkedin-url], I work with teams in all stages.
 
-🖍 Otherwise I try to be a maker, I'd create random and fun stuff >> [Projects][projects-url]
+🖍 Otherwise I try to be a maker, I like to create random and fun stuff >> [Projects][projects-url]
 
 🖌 These days I also parent, and I document it with writing and doodling >> [Blog][blog-url]
 
