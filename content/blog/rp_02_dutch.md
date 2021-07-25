@@ -30,7 +30,7 @@ If you've been to the Netherlands, you'll know what I'm talking about. The motiv
 
 For me, because of this, there was indeed no need, and therefore also no particular motivation besides that I want to be a cool Chinese, but this kind of total self-sustained motivation actually tends to stick, it sticks better than "have to learn because of XYZ".
 
-I had at that time already some basic knowledge, I had studies one of the Delftse methode books for beginners. I focused mainly on the basic pronunciation rules and very basic sentences. I then did an intensive course at the University of Amsterdam, an evening course, 2 times a week. Before the course they would let all applicants go through a test first to place them in the most fitting class level, I was placed in the intermediate class. During the 3 months course, my Dutch level peaked, I broadened my vocabulary and started to grasp well several key concepts in Dutch grammar.
+I had at that time already some basic knowledge, I had studied one of the Delftse methode books for beginners. I focused mainly on the basic pronunciation rules and very basic sentences. I then did an intensive course at the University of Amsterdam, an evening course, 2 times a week. Before the course they would let all applicants go through a test first to place them in the most fitting class level, I was placed in the intermediate class. During the 3 months course, my Dutch level peaked, I broadened my vocabulary and started to grasp well several key concepts in Dutch grammar.
 
 I was in a good shape, but I was nowhere feeling that this is a language that I'm able to make sense of or to use.
 
