@@ -1,9 +1,9 @@
 +++
-title = "About hashtag p_text and p_dataviz ℹ️"
+title = "About tag p_notes and p_viz ℹ️"
 date = "2020-03-12"
-description = "About hashtag p_text and p_dataviz"
+description = "About tag p_notes and p_viz"
 tags = [
-    "p_text", "p_dataviz"
+    "p_notes", "p_viz"
 ]
 +++
 
