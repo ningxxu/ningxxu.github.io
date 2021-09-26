@@ -1,4 +1,4 @@
-Hello, my name is ning.
+Hello, my name is ning
 
 &nbsp;
 
@@ -6,13 +6,12 @@ Hello, my name is ning.
 
 🖌 I document tiny moments >> [Blog][blog-url]
 
-⌨️ And I take freelance product management work >> [Linkedin][linkedin-url]
-
 
 &nbsp;
 
+⌨️ I also do freelance product management work >> [Linkedin][linkedin-url]
 
-🐦 If you'd like to build things together, or just to say hi, best is to [tweet/DM me](https://twitter.com/ningxxu).
+🐦 If you'd like to build things together, or just to say hi, best is to [tweet/DM me](https://twitter.com/ningxxu)
 
 ---
 
