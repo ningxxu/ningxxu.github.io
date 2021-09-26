@@ -2,26 +2,26 @@ Hello, my name is ning.
 
 &nbsp;
 
-🔎 During the day I am a [product manager][linkedin-url], I work with teams in all stages.
+🤖 I build simple apps >> [Projects][projects-url]
 
-🖍 Otherwise I try to be a maker, I like to create random and fun stuff >> [Projects][projects-url]
+🖌 I document tiny moments >> [Blog][blog-url]
 
-🖌 These days I also parent, and I document it with writing and doodling >> [Blog][blog-url]
+⌨️ And I take freelance product management work >> [Linkedin][linkedin-url]
 
 
 &nbsp;
 
 
-📬 If you'd like to build things together, or just to say hi, best is to [drop me a mail](mailto:ninginthenetherlands@gmail.com).
+🐦 If you'd like to build things together, or just to say hi, best is to [tweet/DM me](https://twitter.com/ningxxu).
 
 ---
 
 🐻‍❄️ made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], hosted on [netlify][netlify-url]
 
 
-[linkedin-url]: https://www.linkedin.com/in/ningxxu/
-[blog-url]: /blog/
 [projects-url]: /projects/
+[blog-url]: /blog/
+[linkedin-url]: https://www.linkedin.com/in/ningxxu/
 [hugo-url]: https://gohugo.io/
 [hugo-bear-url]: https://github.com/janraasch/hugo-bearblog/
 [netlify-url]: https://www.netlify.com/
