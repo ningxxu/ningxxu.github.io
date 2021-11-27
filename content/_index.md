@@ -6,10 +6,11 @@ Hello, my name is ning
 
 🖌 I document tiny moments >> [Blog][blog-url]
 
+⌨️ I also help early-stage tech startups with strategies >> [Linkedin][linkedin-url]
+
 
 &nbsp;
 
-⌨️ I also do freelance product management work >> [Linkedin][linkedin-url]
 
 🐦 If you'd like to build things together, or just to say hi, best is to [tweet/DM me](https://twitter.com/ningxxu)
 
