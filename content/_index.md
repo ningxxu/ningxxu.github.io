@@ -1,24 +1,28 @@
-Hello, my name is ning
-
 &nbsp;
 
-🤖 I build simple apps >> [Projects][projects-url]
+👋 Hello, my name is ning.
 
-🖌 I document tiny moments >> [Blog][blog-url]
-
-⌨️ I also help early-stage tech startups with strategies >> [Linkedin][linkedin-url]
-
+🎯 I'm a product advisor helping tech startups and teams. >> [Consulting][consulting-url]
 
 &nbsp;
 
 
-🐦 If you'd like to build things together, or just to say hi, best is to [tweet/DM me](https://twitter.com/ningxxu)
+🤖 I like to build simple apps. >> [Projects][projects-url]
+
+🖌 And I document tiny moments. >> [Blog][blog-url]
+
+
+&nbsp;
+
+
+💬 If you'd like to build things together, or just to say hi, best is to [email me](mailto:hello@ningxxu.com).
 
 ---
 
 🐻‍❄️ made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], hosted on [netlify][netlify-url]
 
 
+[consulting-url]: /consulting/
 [projects-url]: /projects/
 [blog-url]: /blog/
 [linkedin-url]: https://www.linkedin.com/in/ningxxu/

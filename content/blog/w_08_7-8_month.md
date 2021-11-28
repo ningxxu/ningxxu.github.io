@@ -1,9 +1,9 @@
 +++
-title = "7-8 month"
+title = "🐭 7-8 month"
 date = "2020-11-22"
 description = "7-8 month"
 tags = [
-    "p_notes",
+    "parenting_notes",
 ]
 +++
 

@@ -1,5 +1,5 @@
 +++
-title = "Mango 🥭"
+title = "🥭 Mango"
 date = "2021-07-11"
 description = "Mango turned out to be the first word that..."
 tags = [

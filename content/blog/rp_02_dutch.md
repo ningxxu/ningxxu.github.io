@@ -1,5 +1,5 @@
 +++
-title = "My Dutch learning journey 🇳🇱"
+title = "🇳🇱 My Dutch learning journey"
 date = "2021-07-25"
 description = "My Dutch learning journey"
 tags = [

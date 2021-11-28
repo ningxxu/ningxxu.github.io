@@ -3,6 +3,8 @@ title = "Projects"
 menu = "main"
 +++
 
+## Projects
+
 - [Handicrafts][handicrafts-url]
 - [Thoughts][thoughts-url]
 - 2019 [iOS app - Doodle Today][2019-doodle-today-url]
