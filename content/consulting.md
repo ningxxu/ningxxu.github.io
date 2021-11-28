@@ -18,9 +18,9 @@ I spent most of my career to date in tech startups from various industries as an
 
 Since 2018 I started my consulting practices, along the way I worked with many wonderful startups. I got to share my experiences and ideas, to tackle a wide range of challenges. It was a humble and rewarding journey.
 
-I usually have my first chat with CEO's, founders, or product leaders, mostly I grasp the challenge fairly quickly thanks to having worked with various product teams in different stages, organisations and industries. Together we then define the next steps, sometimes I share my input via writing or visualisation, sometimes I join with discussion or workshop.
+I usually have my first chat with CEO's, founders, or product leaders, mostly I could grasp the challenge fairly quickly thanks to having worked with various product teams in different stages, organisations and industries. Together we then define the next steps, sometimes I share my input via writing or visualisation, sometimes I join with discussion or workshop.
 
-I also give talks in meetups and unconferences (I prefer indie and grassroots events), and I've helped individuals with tips to product challenges. I do not metor individuals at this moment, I find in most cases we can't keep seperate a work self and a non-work self, mentoring an individual is in my opinion a much heavier take. Whenever I work with the founders and leaders, I always emphasize the importance of every individuals in team, which're critical pieces in the whole puzzle.
+I also give talks in meetups and unconferences (I prefer indie and grassroots events), and I've helped individuals with tips to product challenges. I do not metor individuals at this moment. I find in most cases we can't keep seperate a work self and a non-work self, it's impossible for me to only mentor the work self of someone, therefore making mentoring an individual in my opinion a much heavier take. Whenever I work with the founders and leaders, I always emphasize the importance of individual's perspectives in team, which're critical pieces in the whole puzzle.
 
 &nbsp;
 
