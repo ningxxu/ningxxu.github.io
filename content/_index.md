@@ -2,7 +2,7 @@
 
 👋 Hello, my name is ning.
 
-🎯 I'm a product advisor helping tech startups and teams. >> [Consulting][consulting-url]
+🎐 I'm a product advisor helping tech startups and teams. >> [Consulting][consulting-url]
 
 &nbsp;
 
