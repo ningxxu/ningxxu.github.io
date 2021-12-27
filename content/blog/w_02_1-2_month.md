@@ -1,5 +1,5 @@
 +++
-title = "🐭 1-2 month"
+title = "🐭 1-2 month - try to learn the baby"
 date = "2020-05-12"
 description = "1-2 month"
 tags = [

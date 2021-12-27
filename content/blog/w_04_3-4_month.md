@@ -1,5 +1,5 @@
 +++
-title = "🐭 3-4 month"
+title = "🐭 3-4 month - more active, schedule slightly easier"
 date = "2020-07-12"
 description = "3-4 month"
 tags = [

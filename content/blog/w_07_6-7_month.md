@@ -1,5 +1,5 @@
 +++
-title = "🐭 6-7 month"
+title = "🐭 6-7 month - schedule more regular, sleep longer during the day"
 date = "2020-10-15"
 description = "6-7 month"
 tags = [

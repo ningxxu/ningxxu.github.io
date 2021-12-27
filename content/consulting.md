@@ -35,4 +35,4 @@ If you're building products and teams, I'd love to hear from you.
 
 &nbsp;
 
-> 📝 On a side note, I also give talks in meetups and unconferences (I prefer indie and grassroots events), and I've helped individuals with tips to product challenges. I do not metor individuals at this moment. I find in most cases we can't keep seperate a work self and a non-work self, it's impossible for me to only mentor the work self of someone, therefore making mentoring an individual in my opinion a much heavier take. Whenever I work with the founders and leaders, I always emphasize the importance of individual's perspectives in team, which're critical pieces in the whole puzzle.
+> 📝 I also give talks in meetups and unconferences (I prefer indie and grassroots events), and I mentor individuals with tips to product challenges.
