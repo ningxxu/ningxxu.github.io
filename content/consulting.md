@@ -11,9 +11,9 @@ I spent most of my career to date in tech startups from various industries as an
 🍒 **Some topics I can help with:**
 
 * Set up the first product function and product role
-* Split from one to multiple product and development teams
-* Experiment tweaks towards the known best saling practices
-* Deliver strategic initiative (or pivot) with existing team capacity
+* Scale product and development teams
+* Experiment tweaks towards the best practices based on specific situation
+* Deliver strategic initiatives (or pivots) with the existing team capacity
 
 ☀️ **How I work:**
 
