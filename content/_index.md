@@ -4,17 +4,14 @@
 
 🧃 I'm a product advisor helping tech startups and teams. >> [Consulting][consulting-url]
 
-&nbsp;
-
-
 🤖 I like to build simple apps. >> [Projects][projects-url]
 
-🖌 And I document tiny moments. >> [Blog][blog-url]
+🖌 I also enjoy document tiny moments. >> [Blog][blog-url]
 
 &nbsp;
 
 
-🐯 **I'm working on something new! >> [🌙 Evning(working title)'][evning-url]**
+**I'm working on something new, check out ['🌙 Evning(working title)'][evning-url]**
 
 
 &nbsp;
