@@ -11,6 +11,11 @@
 
 🖌 And I document tiny moments. >> [Blog][blog-url]
 
+&nbsp;
+
+
+🐯 **I'm working on something new! >> [🌙 Evning(working title)'][evning-url]**
+
 
 &nbsp;
 
@@ -22,6 +27,7 @@
 🐻‍❄️ made with [hugo][hugo-url] [ʕ•ᴥ•ʔ bear][hugo-bear-url], hosted on [netlify][netlify-url]
 
 
+[evning-url]: /evning/
 [consulting-url]: /consulting/
 [projects-url]: /projects/
 [blog-url]: /blog/
