@@ -3,7 +3,7 @@ title = "Consulting"
 menu = "main"
 +++
 
-## Consulting
+#### Advising startups with tactics on growth and scaling
 
 I spent most of my career to date in tech startups from various industries as an early product hire. Many things influence and shape the road to scale, no single path can be copied to ensure sustainable growth. With these learnings, I now advise startups with long-term goals, in their early days. Specifically, I help with tactics, which founders and product leaders could directly benefit from, when setting up company strategies.
 

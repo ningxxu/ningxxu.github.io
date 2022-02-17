@@ -3,7 +3,7 @@ title = "Projects"
 menu = "main"
 +++
 
-## Projects
+#### All kinds of random projects over the years
 
 - [Handicrafts][handicrafts-url]
 - [Thoughts][thoughts-url]
