@@ -87,19 +87,9 @@ main {
     margin: 0 auto 0.5em;
 }
 
-.text-title {
-    display: block;
-    font-size: 1em;
-    font-weight: bold;
-    width: 100%;
-    max-width: 700px;
-    font-family: "Roboto Mono", "Roboto Slab", Helvetica, sans-serif;
-    margin: 0 auto 0.5em;
-}
-
 .text {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: lighter;
     width: 100%;
     max-width: 700px;
