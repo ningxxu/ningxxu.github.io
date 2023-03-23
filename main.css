@@ -62,7 +62,7 @@ main {
 
 
 .logo:hover {
-    background: url("img/Ning_photo.png") no-repeat;
+    background: url("./img/Ning_photo.png") no-repeat;
 }
 
 
