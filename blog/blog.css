@@ -62,7 +62,7 @@ main {
 
 
 .logo:hover {
-    background: url("./img/Ning_photo.png") no-repeat;
+    background: url("img/Ning_photo.png") no-repeat;
 }
 
 
@@ -87,9 +87,19 @@ main {
     margin: 0 auto 0.5em;
 }
 
+.text-title {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    max-width: 700px;
+    font-family: "Roboto Mono", "Roboto Slab", Helvetica, sans-serif;
+    margin: 0 auto 0.5em;
+}
+
 .text {
     display: block;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: lighter;
     width: 100%;
     max-width: 700px;
@@ -108,20 +118,6 @@ main {
 }
 
 .text > li > b {
-    font-weight: bold;
-}
-
-.text > p > a:hover {
-    color: #575757;
-    text-decoration: none;
-}
-
-.text > p > a {
-    color: #00cccc;
-    text-decoration: none;
-}
-
-.text > p > b {
     font-weight: bold;
 }
 
