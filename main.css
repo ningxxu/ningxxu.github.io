@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono|Roboto+Slab");
 
 
-.links > li > a:hover, a:active{
+.links > li > a:hover, .links > li > a:active{
     color: #575757;
     text-decoration: none;
 }
@@ -61,7 +61,7 @@ main {
 }
 
 
-.logo:hover, .logo:active{
+.logo:hover, .logo:active {
     background: url("./img/Ning_photo.png") no-repeat;
 }
 
@@ -97,7 +97,7 @@ main {
     margin: 0 auto 2em;
 }
 
-.text > li > a:hover, a:active {
+.text > li > a:hover, .text > li > a:active {
     color: #575757;
     text-decoration: none;
 }
@@ -111,7 +111,7 @@ main {
     font-weight: bold;
 }
 
-.text > p > a:hover, a:active {
+.text > p > a:hover, .text > p > a:active {
     color: #575757;
     text-decoration: none;
 }
