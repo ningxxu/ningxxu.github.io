@@ -47,34 +47,35 @@
 			<div class="name">NING XU</div>
 
 			<div class="text">
-			<p>👋 Hi! I'm ning (pronounced like in "Good Eve-<b>ning</b>"). I’m an immigrant and a mother, and I'm tinkering a lot of stuff. I think in a mix of English and Dutch, while my mother tongues are <a href="https://en.wikipedia.org/wiki/Hangzhou_dialect" target="_blank">Hangzhou dialect</a> and <a href="https://en.wikipedia.org/wiki/Mandarin_Chinese" target="_blank">Mandarin Chinese</a>. I'm working on projects focusing on social impact, where technology plays a crucial enabling role, and <a href="https://www.linkedin.com/in/ningxxu/" target="_blank">forward and long-term thinking is prioritised</a>. I'm always trying to create something new, and I also crochet, hip hop dance and skateboard.</p>
+			<p>👋 Hi! I'm ning (pronounced like in "Good Eve-<b>ning</b>"). I'm an immigrant and a mother, and I'm tinkering a lot of stuff. I think in a mix of English and Dutch, while my mother tongues are <a href="https://en.wikipedia.org/wiki/Hangzhou_dialect" target="_blank">Hangzhou dialect</a> and <a href="https://en.wikipedia.org/wiki/Mandarin_Chinese" target="_blank">Mandarin Chinese</a>. I've <a href="https://www.linkedin.com/in/ningxxu/" target="_blank">been working</a> on projects focusing on social impact, where technology plays a crucial enabling role, and forward and long-term thinking is prioritised. I'm always trying to create something new, and I also shuffle dance.</p>
 			</div>
 
 			<div class="title">🖌 Writing & Illustrating</div>
 			<div class="text">
-				<li>essay, about <a href="./blog/my-dutch-learning-journey.html" target="_blank">how I learned Dutch</a>, which might help any new language learning</li>
-
-				<li>blogs, about <a href="https://yetmoremusingsonidentity.substack.com/" target="_blank">identity, cultural disassociation, and multilingual parenting</a></li>
-
-				<li>picture books, about emotions</li>
+				<ul>
+					<li>blogs, about <a href="https://yetmoremusingsonidentity.substack.com/" target="_blank">identity, cultural disassociation, and multilingual parenting</a></li>
+					<li>bonus essay, <a href="./blog/my-dutch-learning-journey.html" target="_blank">how I learned Dutch</a>, which might help any new language learning</li>
+					<li>picture books, about emotions</li>
+				</ul>
 			</div>
 
 			<div class="title">🤖 Building</div>
 
 			<div class="text">
-				<li>iOS app, to draw every day to count down,  <a href="https://apps.apple.com/us/app/doodle-today/id1461702153" target="_blank">Doodle Today</a> (discontinued) </li>
-
-				<li>iOS app, to super quickly take notes of conversations, <b>Name TBD</b></li>
-
-				<li>iOS app, an easy-to-use dictionary for multilingual families, <b>Name TBD</b></li>
-
-				<li>Web app, to pick in different languages a set of flash cards for multilingual children's first 100 words, get them printed and shipped, <b>Name TBD</b></li>
+				<ul>
+					<li>an app to pick in different languages a set of flash cards for multilingual children's first 100 words, get them printed and shipped, <b>Name TBD</b></li>
+					<li>an app to super quickly take notes of conversations, <b>Name TBD</b></li>
+					<li>(discontinued) an easy-to-use dictionary for multilingual families </li>
+					<li>(discontinued) iOS app Doodle Today, to draw every day to count down </li>
+				</ul>
 			</div>
 
 			<div class="title">♻️ (wannabe) Making</div>
 
 			<div class="text">
-				<li>a small home <a href="https://fablabs.io" target="_blank">fablab</a>, workshop space with various tools and materials, able to turn (almost any) household old products into functional objects</li>
+				<ul>
+					<li>a small home <a href="https://fablabs.io" target="_blank">fablab</a>, workshop space with various tools and materials, able to turn (almost any) household old products into functional objects</li>
+				</ul>
 			</div>
 
 		</main>
@@ -93,6 +94,37 @@
 			</section>
 		</footer>
 
+		<script>
+			// Touch support for .logo hover effect
+			document.addEventListener('DOMContentLoaded', function() {
+				var logo = document.querySelector('.logo');
+				if (!logo) return;
+				var originalBg = 'url("./img/Ning_avatar.png") no-repeat';
+				var hoverBg = 'url("./img/Ning_photo.png") no-repeat';
+
+				// For touch devices
+				var isTouch = false;
+				logo.addEventListener('touchstart', function(e) {
+					isTouch = true;
+					logo.style.background = hoverBg;
+				});
+				logo.addEventListener('touchend', function(e) {
+					// Delay to allow tap/click if needed
+					setTimeout(function() {
+						logo.style.background = originalBg;
+					}, 300);
+				});
+				// Optional: revert on touchcancel (e.g. scroll)
+				logo.addEventListener('touchcancel', function(e) {
+					logo.style.background = originalBg;
+				});
+				// Also support click for accessibility (optional)
+				logo.addEventListener('click', function(e) {
+					if (isTouch) return; // Don't trigger on touch
+					// Optionally, toggle image on click for non-touch
+				});
+			});
+		</script>
 
 	</body>
 
