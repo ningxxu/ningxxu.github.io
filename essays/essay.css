@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono");
+
+:root {
+    --content-width: 680px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Mono", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #575757;
+    background-color: #fdfcfb;
+}
+
+header,
+main,
+footer,
+hr {
+    width: min(100% - 2rem, var(--content-width));
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    padding: 2.5rem 0 1.5rem;
+}
+
+main {
+    padding: 1rem 0 2rem;
+}
+
+.home-link {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: bold;
+    color: #00cccc;
+    text-decoration: none;
+}
+
+.home-link:hover,
+.home-link:active {
+    color: #575757;
+}
+
+.title {
+    margin: 0 0 0.75rem;
+    font-family: "Bungee", sans-serif;
+    font-size: 2.55rem;
+    font-weight: bold;
+    line-height: 1.08;
+    letter-spacing: 0;
+    color: #303030;
+}
+
+.essay-meta {
+    margin: 0 0 2.4rem;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: #777777;
+}
+
+.text {
+    font-size: 0.9rem;
+    font-weight: lighter;
+    line-height: 1.9;
+}
+
+.text p,
+.text ul,
+.text blockquote {
+    margin-top: 0;
+    margin-bottom: 1.45rem;
+}
+
+.text h2,
+.text h3 {
+    margin: 2.6rem 0 0.9rem;
+    font-family: "Roboto Mono", Helvetica, sans-serif;
+    line-height: 1.35;
+    color: #303030;
+}
+
+.text h2 {
+    font-size: 1.18rem;
+}
+
+.text h3 {
+    font-size: 1rem;
+}
+
+.text h1 {
+    margin: 2.8rem 0 0;
+    font-family: "Bungee", sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.15;
+    letter-spacing: 0;
+    color: #303030;
+}
+
+.text ul {
+    padding-left: 1.3rem;
+}
+
+.text li {
+    margin-bottom: 0.8rem;
+}
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1.1rem 1.25rem;
+    border-left: 4px solid #303030;
+    background: #fffdf7;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+a,
+a:visited,
+a:focus {
+    color: #00cccc;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+a:hover,
+a:active {
+    color: #575757;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 1rem 0 2rem;
+    color: #575757;
+}
+
+.footer-content {
+    width: 100%;
+    line-height: 1.8;
+}
+
+.links {
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 660px) {
+    header,
+    main,
+    footer,
+    hr {
+        width: min(100% - 1.25rem, var(--content-width));
+    }
+
+    header {
+        padding-top: 2rem;
+    }
+
+    .title {
+        font-size: 2.05rem;
+    }
+
+    .essay-meta {
+        margin-bottom: 2rem;
+    }
+
+    .text {
+        font-size: 0.86rem;
+        line-height: 1.8;
+    }
+}
