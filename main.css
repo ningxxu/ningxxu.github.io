@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee|Roboto+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+SC:wght@700;900&family=Roboto+Mono:wght@400;700&display=swap");
 
 :root {
     --content-width: 680px;
@@ -235,16 +235,26 @@ b {
     letter-spacing: 0;
 }
 
-html[lang="zh-CN"] .project-title,
-html[lang="ja"] .project-title,
-html[lang="ru"] .project-title {
-    font-family: "Roboto Mono", Helvetica, sans-serif;
-    font-weight: bold;
-    line-height: 1.2;
+html[lang="zh-CN"] .project-title {
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: 900;
+    line-height: 1.25;
 }
 
-html[lang="zh-CN"] .text,
-html[lang="ja"] .text {
+html[lang="zh-CN"] .project-title[lang="en"],
+html[lang="zh-CN"] .project-title[lang="nl"] {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+html[lang="zh-CN"] .section-heading h2,
+html[lang="zh-CN"] .project-type {
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: 700;
+}
+
+html[lang="zh-CN"] .text {
     line-height: 1.95;
 }
 
@@ -618,9 +628,7 @@ footer {
         overflow-wrap: anywhere;
     }
 
-    html[lang="zh-CN"] .project-title,
-    html[lang="ja"] .project-title,
-    html[lang="ru"] .project-title {
+    html[lang="zh-CN"] .project-title {
         line-height: 1.25;
     }
 
