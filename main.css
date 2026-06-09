@@ -26,7 +26,35 @@ hr {
 }
 
 header {
+    position: relative;
     padding: 3em 0 1em;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 1.35rem;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.38rem;
+    font-size: 0.72rem;
+    line-height: 1;
+    white-space: nowrap;
+    color: #9a9a9a;
+}
+
+.language-switcher a {
+    color: #777777;
+}
+
+.language-switcher a:hover,
+.language-switcher a:active {
+    color: #00a9a9;
+}
+
+.language-switcher a[aria-current="page"] {
+    font-weight: bold;
+    color: #303030;
 }
 
 main {
@@ -205,6 +233,19 @@ b {
     font-size: 1.55rem;
     line-height: 1.05;
     letter-spacing: 0;
+}
+
+html[lang="zh-CN"] .project-title,
+html[lang="ja"] .project-title,
+html[lang="ru"] .project-title {
+    font-family: "Roboto Mono", Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+html[lang="zh-CN"] .text,
+html[lang="ja"] .text {
+    line-height: 1.95;
 }
 
 .project-note {
@@ -497,12 +538,17 @@ footer {
     main,
     footer,
     hr {
-        width: min(100% - 1.25rem, var(--content-width));
+        width: min(100% - 2rem, var(--content-width));
     }
 
     header {
-        padding-top: 1.6em;
+        padding-top: 3em;
         padding-bottom: 0.65em;
+    }
+
+    .language-switcher {
+        top: 1.25rem;
+        font-size: 0.68rem;
     }
 
     .logo {
@@ -570,6 +616,12 @@ footer {
         font-size: 1.05rem;
         line-height: 1.12;
         overflow-wrap: anywhere;
+    }
+
+    html[lang="zh-CN"] .project-title,
+    html[lang="ja"] .project-title,
+    html[lang="ru"] .project-title {
+        line-height: 1.25;
     }
 
     .project-note {
