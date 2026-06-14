@@ -2,6 +2,17 @@
 
 :root {
     --content-width: 680px;
+    --ink: #303030;
+    --cream: #fdfcfb;
+    --accent-yellow: #ffef88;
+    --accent-coral: #ffb997;
+    --accent-teal: #86d5c3;
+    --project-lavender: #c7d1f2;
+    --project-blue: #bcdce8;
+    --project-mint: #c4e2d7;
+    --project-aqua: #b8d0ea;
+    --writing-gold: #efd38f;
+    --writing-peach: #f2cba8;
 }
 
 * {
@@ -27,7 +38,7 @@ hr {
 
 header {
     position: relative;
-    padding: 3em 0 1em;
+    padding: calc(3em + 10px) 0 1em;
 }
 
 .language-switcher {
@@ -114,8 +125,43 @@ b {
     font-weight: bold;
 }
 
+.principles,
 .projects {
     padding: 0.75rem 0 0;
+    scroll-margin-top: 1rem;
+}
+
+.principles {
+    margin-bottom: 1.5rem;
+}
+
+.projects--writing {
+    margin-top: 1.75rem;
+}
+
+.site-nav {
+    position: absolute;
+    top: 1.35rem;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    font-size: 0.72rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.site-nav span {
+    color: #a0a0a0;
+}
+
+.site-nav a {
+    color: #575757;
+}
+
+.site-nav a:hover,
+.site-nav a:active {
+    color: #00a9a9;
 }
 
 .section-heading {
@@ -147,11 +193,51 @@ b {
     width: calc(100% - 4px);
 }
 
+.principles-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-left: 5px solid #303030;
+    border-radius: 0 8px 8px 0;
+    color: #303030;
+    background: #f3f0e7;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.principles-link:hover,
+.principles-link:focus-visible {
+    color: #303030;
+    background-color: #ebe7da;
+    transform: translateX(2px);
+    outline: none;
+}
+
+.principles-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.3rem 1.45rem;
+}
+
+.principles-title {
+    font-family: "Roboto Mono", Helvetica, sans-serif;
+    font-size: 1.12rem;
+    font-weight: bold;
+    line-height: 1.35;
+}
+
+.principles-action {
+    margin-top: 0.55rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #008f8f;
+}
+
 .project-card {
     position: relative;
     display: grid;
     grid-template-columns: 180px minmax(0, 1fr);
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto 1fr auto auto auto;
     column-gap: 1.25rem;
     min-height: 180px;
     padding: 0.85rem;
@@ -184,7 +270,7 @@ b {
 .project-art {
     position: relative;
     display: block;
-    grid-row: 1 / 5;
+    grid-row: 1 / 6;
     min-height: 180px;
     margin: -0.85rem 0 -0.85rem -0.85rem;
     overflow: hidden;
@@ -192,23 +278,27 @@ b {
 }
 
 .project-card--blogs .project-art {
-    background: #ffd166;
+    background: var(--writing-peach);
 }
 
 .project-card--dutch .project-art {
-    background: #86d5c3;
-}
-
-.project-card--views .project-art {
-    background: #f4c4e5;
+    background: var(--writing-gold);
 }
 
 .project-card--languages .project-art {
-    background: #f9a7b0;
+    background: var(--project-aqua);
 }
 
 .project-card--coming .project-art {
-    background: #b8c6ff;
+    background: var(--project-lavender);
+}
+
+.project-card--voice .project-art {
+    background: var(--project-blue);
+}
+
+.project-card--hanzi .project-art {
+    background: var(--project-mint);
 }
 
 .project-type {
@@ -223,16 +313,38 @@ b {
     line-height: 1;
     text-transform: uppercase;
     color: #303030;
-    background: #fdfcfb;
+    background: var(--cream);
+}
+
+.project-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    width: fit-content;
 }
 
 .project-title {
     align-self: end;
     margin-top: 0;
     font-family: "Bungee", sans-serif;
-    font-size: 1.55rem;
-    line-height: 1.05;
+    font-size: 1.42rem;
+    line-height: 1.08;
     letter-spacing: 0;
+}
+
+.external-mark {
+    display: grid;
+    place-items: center;
+    width: 1.35rem;
+    height: calc(0.7rem + 0.4rem + 4px);
+    border-radius: 6px;
+    font-family: "Roboto Mono", Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #303030;
+    background: #e9e9e9;
+    padding: 0 0.08rem 0.08rem 0;
 }
 
 html[lang="zh-CN"] .project-title {
@@ -266,20 +378,136 @@ html[lang="zh-CN"] .text {
     color: #575757;
 }
 
+.project-status {
+    align-self: start;
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #777777;
+}
+
+.voice-home {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 118px;
+    height: 78px;
+    border: 2px solid #303030;
+    background: #fdfcfb;
+    box-shadow: 3px 3px 0 #303030;
+    transform: translate(-50%, -15%);
+}
+
+.voice-home::before,
+.voice-home::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translateX(-50%);
+}
+
+.voice-home::before {
+    left: -13px;
+    top: -62px;
+    border-left: 72px solid transparent;
+    border-right: 72px solid transparent;
+    border-bottom: 64px solid #303030;
+    transform: none;
+}
+
+.voice-home::after {
+    left: -7px;
+    top: -56px;
+    border-left: 66px solid transparent;
+    border-right: 66px solid transparent;
+    border-bottom: 58px solid var(--accent-yellow);
+    transform: none;
+}
+
+.voice-wave {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 58px;
+    height: 38px;
+    background:
+        linear-gradient(#303030, #303030) 0 50% / 4px 12px no-repeat,
+        linear-gradient(#303030, #303030) 13px 50% / 4px 26px no-repeat,
+        linear-gradient(#303030, #303030) 27px 50% / 4px 38px no-repeat,
+        linear-gradient(#303030, #303030) 41px 50% / 4px 24px no-repeat,
+        linear-gradient(#303030, #303030) 54px 50% / 4px 10px no-repeat;
+    transform: translate(-50%, -45%);
+}
+
+.hanzi-path {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    right: 30px;
+    height: 4px;
+    border: 1px solid #303030;
+    background: #303030;
+    transform: translateY(-50%) rotate(-8deg);
+}
+
+.hanzi-step {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #303030;
+    border-radius: 50%;
+    font-family: "Noto Sans SC", sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    color: #303030;
+    background: var(--cream);
+    box-shadow: 3px 3px 0 #303030;
+}
+
+.hanzi-step-one {
+    left: 24px;
+    bottom: 30px;
+}
+
+.hanzi-step-two {
+    top: 34px;
+    left: 50%;
+    background: var(--accent-yellow);
+    transform: translateX(-50%);
+}
+
+.hanzi-step-three {
+    right: 22px;
+    bottom: 42px;
+    width: 60px;
+    height: 60px;
+    font-size: 1.65rem;
+    background: var(--accent-coral);
+}
+
 .blog-bubble {
     position: absolute;
-    top: 36px;
-    left: 34px;
-    width: 108px;
-    height: 86px;
+    top: 50%;
+    left: 50%;
+    width: 118px;
+    height: 94px;
     border: 2px solid #303030;
     background:
-        radial-gradient(circle at 31px 40px, #303030 0 5px, transparent 6px),
-        radial-gradient(circle at 54px 40px, #303030 0 5px, transparent 6px),
-        radial-gradient(circle at 77px 40px, #303030 0 5px, transparent 6px),
-        #fff8e8;
+        radial-gradient(circle at 34px 43px, #303030 0 5px, transparent 6px),
+        radial-gradient(circle at 59px 43px, #303030 0 5px, transparent 6px),
+        radial-gradient(circle at 84px 43px, #303030 0 5px, transparent 6px),
+        var(--cream);
     border-radius: 8px;
     box-shadow: 3px 3px 0 #303030;
+    transform: translate(-50%, -56%);
 }
 
 .blog-bubble::after {
@@ -291,43 +519,8 @@ html[lang="zh-CN"] .text {
     height: 22px;
     border-right: 2px solid #303030;
     border-bottom: 2px solid #303030;
-    background: #fff8e8;
+    background: var(--cream);
     transform: rotate(45deg);
-}
-
-.blog-pencil {
-    position: absolute;
-    right: 30px;
-    bottom: 42px;
-    width: 72px;
-    height: 16px;
-    border: 2px solid #303030;
-    background: #86d5c3;
-    transform: rotate(-28deg);
-    box-shadow: 3px 3px 0 #303030;
-}
-
-.blog-pencil::before {
-    content: "";
-    position: absolute;
-    left: -18px;
-    top: -2px;
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 18px solid #303030;
-}
-
-.blog-pencil::after {
-    content: "";
-    position: absolute;
-    right: -12px;
-    top: -2px;
-    width: 10px;
-    height: 16px;
-    border: 2px solid #303030;
-    background: #ffb997;
 }
 
 .speech {
@@ -340,7 +533,7 @@ html[lang="zh-CN"] .text {
     border-radius: 50%;
     font-family: "Bungee", sans-serif;
     font-size: 1rem;
-    background: #fdfcfb;
+    background: var(--cream);
     box-shadow: 2px 2px 0 #303030;
 }
 
@@ -352,13 +545,21 @@ html[lang="zh-CN"] .text {
 .speech-two {
     top: 80px;
     left: 78px;
-    background: #ffef88;
+    background: var(--accent-yellow);
 }
 
 .speech-three {
     top: 36px;
     right: 28px;
-    background: #ffb997;
+    background: var(--accent-coral);
+}
+
+.speech-four {
+    left: 24px;
+    bottom: 24px;
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: 900;
+    background: var(--accent-yellow);
 }
 
 .view-mark {
@@ -445,7 +646,7 @@ html[lang="zh-CN"] .text {
     height: 0;
     border-left: 66px solid transparent;
     border-right: 66px solid transparent;
-    border-bottom: 58px solid #ffef88;
+    border-bottom: 58px solid var(--accent-yellow);
 }
 
 .house span {
@@ -456,7 +657,7 @@ html[lang="zh-CN"] .text {
     height: 42px;
     border: 2px solid #303030;
     border-bottom: 0;
-    background: #86d5c3;
+    background: var(--accent-teal);
 }
 
 .language-dot {
@@ -552,7 +753,7 @@ footer {
     }
 
     header {
-        padding-top: 3em;
+        padding-top: calc(3em + 10px);
         padding-bottom: 0.65em;
     }
 
@@ -577,8 +778,23 @@ footer {
         margin-bottom: 1.25rem;
     }
 
+    .principles,
     .projects {
         padding-top: 0.55rem;
+    }
+
+    .principles {
+        margin-bottom: 1.15rem;
+    }
+
+    .projects--writing {
+        margin-top: 1.35rem;
+    }
+
+    .site-nav {
+        top: 1.25rem;
+        gap: 0.25rem;
+        font-size: 0.62rem;
     }
 
     .section-heading {
@@ -599,19 +815,36 @@ footer {
         width: calc(100% - 3px);
     }
 
+    .principles-link {
+        border-left-width: 4px;
+    }
+
+    .principles-copy {
+        padding: 1rem;
+    }
+
+    .principles-title {
+        font-size: 0.95rem;
+        line-height: 1.35;
+    }
+
+    .principles-action {
+        margin-top: 0.65rem;
+        font-size: 0.66rem;
+    }
+
     .project-card {
-        grid-template-columns: 126px minmax(0, 1fr);
-        grid-template-rows: auto 1fr auto auto;
-        column-gap: 0.85rem;
+        grid-template-columns: 120px minmax(0, 1fr);
+        grid-template-rows: auto 1fr auto auto auto;
+        column-gap: 0.75rem;
         row-gap: 0;
         min-height: 126px;
         padding: 0.75rem;
     }
 
     .project-art {
-        grid-row: 1 / 5;
+        grid-row: 1 / 6;
         min-height: 126px;
-        aspect-ratio: 1;
         margin: -0.75rem 0 -0.75rem -0.75rem;
         border-right: 2px solid #303030;
         border-bottom: 0;
@@ -621,10 +854,14 @@ footer {
         font-size: 0.66rem;
     }
 
+    .external-mark {
+        height: calc(0.66rem + 0.4rem + 4px);
+    }
+
     .project-title {
         margin-top: 0;
-        font-size: 1.05rem;
-        line-height: 1.12;
+        font-size: 0.98rem;
+        line-height: 1.15;
         overflow-wrap: anywhere;
     }
 
@@ -638,16 +875,83 @@ footer {
         line-height: 1.45;
     }
 
-    .blog-bubble {
-        top: 22px;
-        left: 22px;
-        width: 76px;
-        height: 60px;
+    .project-status {
+        margin-top: 0.4rem;
+        font-size: 0.62rem;
+    }
+
+    .voice-home {
+        width: 84px;
+        height: 56px;
+    }
+
+    .voice-home::before {
+        left: -10px;
+        top: -45px;
+        border-left-width: 52px;
+        border-right-width: 52px;
+        border-bottom-width: 46px;
+    }
+
+    .voice-home::after {
+        left: -5px;
+        top: -40px;
+        border-left-width: 47px;
+        border-right-width: 47px;
+        border-bottom-width: 41px;
+    }
+
+    .voice-wave {
+        width: 42px;
+        height: 28px;
         background:
-            radial-gradient(circle at 22px 28px, #303030 0 4px, transparent 5px),
-            radial-gradient(circle at 38px 28px, #303030 0 4px, transparent 5px),
-            radial-gradient(circle at 54px 28px, #303030 0 4px, transparent 5px),
+            linear-gradient(#303030, #303030) 0 50% / 3px 9px no-repeat,
+            linear-gradient(#303030, #303030) 10px 50% / 3px 19px no-repeat,
+            linear-gradient(#303030, #303030) 20px 50% / 3px 28px no-repeat,
+            linear-gradient(#303030, #303030) 30px 50% / 3px 18px no-repeat,
+            linear-gradient(#303030, #303030) 39px 50% / 3px 8px no-repeat;
+    }
+
+    .hanzi-path {
+        left: 20px;
+        right: 20px;
+        height: 3px;
+    }
+
+    .hanzi-step {
+        width: 37px;
+        height: 37px;
+        font-size: 1.05rem;
+    }
+
+    .hanzi-step-one {
+        left: 15px;
+        bottom: 22px;
+    }
+
+    .hanzi-step-two {
+        top: 23px;
+    }
+
+    .hanzi-step-three {
+        right: 14px;
+        bottom: 29px;
+        width: 43px;
+        height: 43px;
+        font-size: 1.18rem;
+    }
+
+    .blog-bubble {
+        top: 50%;
+        left: 50%;
+        width: 82px;
+        height: 66px;
+        background:
+            radial-gradient(circle at 23px 30px, #303030 0 4px, transparent 5px),
+            radial-gradient(circle at 41px 30px, #303030 0 4px, transparent 5px),
+            radial-gradient(circle at 59px 30px, #303030 0 4px, transparent 5px),
             #fff8e8;
+        transform: translate(-50%, -56%);
     }
 
     .blog-bubble::after {
@@ -655,13 +959,6 @@ footer {
         bottom: -10px;
         width: 16px;
         height: 16px;
-    }
-
-    .blog-pencil {
-        right: 18px;
-        bottom: 28px;
-        width: 52px;
-        height: 14px;
     }
 
     .speech {
@@ -683,6 +980,11 @@ footer {
     .speech-three {
         top: 24px;
         right: 16px;
+    }
+
+    .speech-four {
+        left: 14px;
+        bottom: 14px;
     }
 
     .view-mark-one {
@@ -785,6 +1087,16 @@ footer {
 }
 
 @media (max-width: 360px) {
+    header {
+        padding-top: calc(4.25em + 10px);
+    }
+
+    .site-nav {
+        right: 5.5rem;
+        row-gap: 0.35rem;
+        line-height: 1.2;
+    }
+
     .project-card {
         grid-template-columns: 1fr;
         grid-template-rows: 170px auto auto auto;

@@ -88,6 +88,41 @@ main {
     font-size: 1.18rem;
 }
 
+.text .section-title {
+    margin-top: 3.4rem;
+    font-family: "Bungee", sans-serif;
+    font-size: 1.55rem;
+    line-height: 1.15;
+}
+
+.principles-list {
+    margin-top: 2rem;
+    padding-left: 1.4rem;
+}
+
+.principles-list li {
+    margin-bottom: 1.9rem;
+    padding-left: 0.25rem;
+}
+
+.principles-list li::marker {
+    color: #00a9a9;
+    font-size: 1.1em;
+}
+
+.principles-list strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.55;
+    color: #303030;
+}
+
+.principles-list p {
+    margin: 0.4rem 0 0;
+    color: #686868;
+}
+
 .text h3 {
     font-size: 1rem;
 }

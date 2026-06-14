@@ -47,23 +47,31 @@
 	<meta name="theme-color" content="#fdfcfb">
 </head>
 
-	<body>
+		<body>
 
-		<header>
-			<nav class="language-switcher" aria-label="Language">
+			<header>
+				<nav class="site-nav" aria-label="Site">
+					<a href="#about">About</a>
+					<span aria-hidden="true">·</span>
+					<a href="./beliefs.html">Beliefs</a>
+					<span aria-hidden="true">·</span>
+					<a href="#projects">Projects</a>
+					<span aria-hidden="true">·</span>
+					<a href="#writing">Writing</a>
+				</nav>
+				<nav class="language-switcher" aria-label="Language">
 				<a href="./index.html" lang="en" aria-current="page">EN</a>
 				<span aria-hidden="true">|</span>
 				<a href="./nl/index.html" lang="nl">NL</a>
 				<span aria-hidden="true">|</span>
 				<a href="./zh/index.html" lang="zh">ZH</a>
 			</nav>
-			<div class="logo">	
-			</div>
+				<a class="logo" href="./index.html" aria-label="Home"></a>
 		</header>
 
 
 		<main>
-			<section class="intro" aria-labelledby="page-name">
+			<section id="about" class="intro" aria-labelledby="page-name">
 				<h1 id="page-name" class="name">NING XU</h1>
 
 				<div class="text">
@@ -71,33 +79,33 @@
 				</div>
 			</section>
 
-			<section class="projects" aria-labelledby="projects-title">
+			<section class="principles" aria-label="Beliefs">
+				<a class="principles-link" href="./beliefs.html">
+					<span class="principles-copy">
+						<span class="principles-title">How I see the world</span>
+						<span class="principles-action">Read what I believe →</span>
+					</span>
+				</a>
+			</section>
+
+			<section id="projects" class="projects" aria-labelledby="projects-title">
 				<div class="section-heading">
 					<h2 id="projects-title">Projects</h2>
-					<p>Writing, Illustrating, Building, Teaching, Experimenting</p>
 				</div>
 
 				<div class="project-grid">
-					<a class="project-card project-card--dutch" href="./essays/how-i-learned-dutch.html" target="_blank" rel="noreferrer">
+					<div class="project-card project-card--coming" aria-disabled="true">
 						<span class="project-art" aria-hidden="true">
-							<span class="speech speech-one">ik</span>
-							<span class="speech speech-two">zh</span>
-							<span class="speech speech-three">nl</span>
+							<span class="lesson-board">
+								<span>ZH</span>
+								<span>NL</span>
+							</span>
 						</span>
-						<span class="project-type">Essay</span>
-						<span class="project-title">How I Learned Dutch</span>
-						<span class="project-note">My Dutch learning journey, with notes for learning any new language</span>
-					</a>
-
-					<a class="project-card project-card--views" href="./essays/views-that-shaped-me.html" target="_blank" rel="noreferrer">
-						<span class="project-art" aria-hidden="true">
-							<span class="view-mark view-mark-one"></span>
-							<span class="view-mark view-mark-two"></span>
-						</span>
-						<span class="project-type">Essay</span>
-						<span class="project-title">Views That Shaped Me</span>
-						<span class="project-note">that became part of my mental model</span>
-					</a>
+						<span class="project-type">Course</span>
+						<span class="project-title">I Teach Dutch in Chinese</span>
+						<span class="project-note">Practical Dutch lessons explained through Chinese</span>
+						<span class="project-status">Coming soon</span>
+					</div>
 
 					<a class="project-card project-card--languages" href="https://ningxxu.com/all-languages-at-home/" target="_blank" rel="noreferrer">
 						<span class="project-art" aria-hidden="true">
@@ -110,32 +118,64 @@
 							<span class="language-dot dot-four">RU</span>
 							<span class="language-dot dot-five">JP</span>
 						</span>
-						<span class="project-type">App</span>
+						<span class="project-meta"><span class="project-type">App</span><span class="external-mark" aria-hidden="true">↗</span></span>
 						<span class="project-title">Alle Talen Thuis</span>
 						<span class="project-note">Pick a word from one family language and discover how it looks, sounds, and feels in the others</span>
+					</a>
+
+					<div class="project-card project-card--voice project-card--coming" aria-disabled="true">
+						<span class="project-art" aria-hidden="true">
+							<span class="voice-home">
+								<span class="voice-wave"></span>
+							</span>
+						</span>
+						<span class="project-type">App</span>
+						<span class="project-title">Keep It Growing</span>
+						<span class="project-note">A voice companion that helps multilingual children keep using languages they are beginning to forget</span>
+						<span class="project-status">Coming soon</span>
+					</div>
+
+					<div class="project-card project-card--hanzi project-card--coming" aria-disabled="true">
+						<span class="project-art" aria-hidden="true">
+							<span class="hanzi-path"></span>
+							<span class="hanzi-step hanzi-step-one">木</span>
+							<span class="hanzi-step hanzi-step-two">火</span>
+							<span class="hanzi-step hanzi-step-three">森</span>
+						</span>
+						<span class="project-type">App</span>
+						<span class="project-title">Hanzi Quest</span>
+						<span class="project-note">A game for recognizing, remembering, and eventually making Chinese characters your own</span>
+						<span class="project-status">Coming soon</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="writing" class="projects projects--writing" aria-labelledby="writing-title">
+				<div class="section-heading">
+					<h2 id="writing-title">Writing &amp; Illustrating</h2>
+				</div>
+
+				<div class="project-grid">
+					<a class="project-card project-card--dutch" href="./essays/how-i-learned-dutch.html">
+						<span class="project-art" aria-hidden="true">
+							<span class="speech speech-one">ik</span>
+							<span class="speech speech-two">zh</span>
+							<span class="speech speech-three">nl</span>
+							<span class="speech speech-four">我</span>
+						</span>
+						<span class="project-type">Essay</span>
+						<span class="project-title">How I Learned Dutch</span>
+						<span class="project-note">My Dutch learning journey, with notes for learning any new language</span>
 					</a>
 
 					<a class="project-card project-card--blogs" href="https://yetmoremusingsonidentity.substack.com/" target="_blank" rel="noreferrer">
 						<span class="project-art" aria-hidden="true">
 							<span class="blog-bubble"></span>
-							<span class="blog-pencil"></span>
 						</span>
-						<span class="project-type">Blog</span>
+						<span class="project-meta"><span class="project-type">Blog</span><span class="external-mark" aria-hidden="true">↗</span></span>
 						<span class="project-title">Yet More Musings on Identity</span>
 						<span class="project-note">identity, belonging, multilingual parenting, cultural disassociation, pigeonholing (hokjesdenken)</span>
 					</a>
-
-					<div class="project-card project-card--coming" aria-disabled="true">
-						<span class="project-art" aria-hidden="true">
-							<span class="lesson-board">
-								<span>ZH</span>
-								<span>NL</span>
-							</span>
-						</span>
-						<span class="project-type">Course</span>
-						<span class="project-title">I Teach Dutch in Chinese</span>
-						<span class="project-note">coming soon</span>
-					</div>
 				</div>
 			</section>
 		</main>

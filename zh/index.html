@@ -47,23 +47,31 @@
 	<meta name="theme-color" content="#fdfcfb">
 </head>
 
-	<body>
+		<body>
 
-		<header>
-			<nav class="language-switcher" aria-label="Language">
+			<header>
+				<nav class="site-nav" aria-label="网站导航">
+					<a href="#about">关于我</a>
+					<span aria-hidden="true">·</span>
+					<a href="../beliefs.html">我的信念 (EN)</a>
+					<span aria-hidden="true">·</span>
+					<a href="#projects">项目</a>
+					<span aria-hidden="true">·</span>
+					<a href="#writing">写作</a>
+				</nav>
+				<nav class="language-switcher" aria-label="Language">
 				<a href="../index.html" lang="en">EN</a>
 				<span aria-hidden="true">|</span>
 				<a href="../nl/index.html" lang="nl">NL</a>
 				<span aria-hidden="true">|</span>
 				<a href="../zh/index.html" lang="zh" aria-current="page">ZH</a>
 			</nav>
-			<div class="logo">	
-			</div>
+				<a class="logo" href="./index.html" aria-label="Home"></a>
 		</header>
 
 
 		<main>
-			<section class="intro" aria-labelledby="page-name">
+			<section id="about" class="intro" aria-labelledby="page-name">
 				<h1 id="page-name" class="name">NING XU</h1>
 
 				<div class="text">
@@ -71,33 +79,33 @@
 				</div>
 			</section>
 
-			<section class="projects" aria-labelledby="projects-title">
+			<section class="principles" aria-label="我的信念">
+				<a class="principles-link" href="../beliefs.html">
+					<span class="principles-copy">
+						<span class="principles-title">我如何看待这个世界</span>
+						<span class="principles-action">阅读我所相信的 →</span>
+					</span>
+				</a>
+			</section>
+
+			<section id="projects" class="projects" aria-labelledby="projects-title">
 				<div class="section-heading">
 					<h2 id="projects-title">项目</h2>
-					<p>写作、插画、创作、教学、实验</p>
 				</div>
 
 				<div class="project-grid">
-					<a class="project-card project-card--dutch" href="../essays/how-i-learned-dutch.html" target="_blank" rel="noreferrer">
+					<div class="project-card project-card--coming" aria-disabled="true">
 						<span class="project-art" aria-hidden="true">
-							<span class="speech speech-one">ik</span>
-							<span class="speech speech-two">zh</span>
-							<span class="speech speech-three">nl</span>
+							<span class="lesson-board">
+								<span>ZH</span>
+								<span>NL</span>
+							</span>
 						</span>
-						<span class="project-type">随笔</span>
-						<span class="project-title">我是如何学会荷兰语的</span>
-						<span class="project-note">我的荷兰语学习历程，以及学习任何新语言时都可能有用的笔记</span>
-					</a>
-
-					<a class="project-card project-card--views" href="../essays/views-that-shaped-me.html" target="_blank" rel="noreferrer">
-						<span class="project-art" aria-hidden="true">
-							<span class="view-mark view-mark-one"></span>
-							<span class="view-mark view-mark-two"></span>
-						</span>
-						<span class="project-type">随笔</span>
-						<span class="project-title">塑造我的那些观点</span>
-						<span class="project-note">它们逐渐成为我的思维模型</span>
-					</a>
+						<span class="project-type">课程</span>
+						<span class="project-title">我用中文教荷兰语</span>
+						<span class="project-note">用中文讲解实用荷兰语</span>
+						<span class="project-status">即将上线</span>
+					</div>
 
 					<a class="project-card project-card--languages" href="https://ningxxu.com/all-languages-at-home/" target="_blank" rel="noreferrer">
 						<span class="project-art" aria-hidden="true">
@@ -110,32 +118,64 @@
 							<span class="language-dot dot-four">RU</span>
 							<span class="language-dot dot-five">JP</span>
 						</span>
-						<span class="project-type">应用</span>
+						<span class="project-meta"><span class="project-type">应用</span><span class="external-mark" aria-hidden="true">↗</span></span>
 						<span class="project-title" lang="nl">Alle Talen Thuis</span>
 						<span class="project-note">从家中的一种语言里选一个词，看看它在其他语言中如何书写、如何发音，又带来怎样的感觉</span>
+					</a>
+
+					<div class="project-card project-card--voice project-card--coming" aria-disabled="true">
+						<span class="project-art" aria-hidden="true">
+							<span class="voice-home">
+								<span class="voice-wave"></span>
+							</span>
+						</span>
+						<span class="project-type">应用</span>
+						<span class="project-title" lang="en">Keep It Growing</span>
+						<span class="project-note">一个语音伙伴，帮助多语儿童继续使用那些正逐渐遗忘的语言</span>
+						<span class="project-status">即将上线</span>
+					</div>
+
+					<div class="project-card project-card--hanzi project-card--coming" aria-disabled="true">
+						<span class="project-art" aria-hidden="true">
+							<span class="hanzi-path"></span>
+							<span class="hanzi-step hanzi-step-one">木</span>
+							<span class="hanzi-step hanzi-step-two">火</span>
+							<span class="hanzi-step hanzi-step-three">森</span>
+						</span>
+						<span class="project-type">应用</span>
+						<span class="project-title" lang="en">Hanzi Quest</span>
+						<span class="project-note">一款帮助识别、记忆，并最终真正掌握汉字的游戏</span>
+						<span class="project-status">即将上线</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="writing" class="projects projects--writing" aria-labelledby="writing-title">
+				<div class="section-heading">
+					<h2 id="writing-title">写作与插画</h2>
+				</div>
+
+				<div class="project-grid">
+					<a class="project-card project-card--dutch" href="../essays/how-i-learned-dutch.html">
+						<span class="project-art" aria-hidden="true">
+							<span class="speech speech-one">ik</span>
+							<span class="speech speech-two">zh</span>
+							<span class="speech speech-three">nl</span>
+							<span class="speech speech-four">我</span>
+						</span>
+						<span class="project-type">随笔</span>
+						<span class="project-title">我是如何学会荷兰语的</span>
+						<span class="project-note">我的荷兰语学习历程，以及学习任何新语言时都可能有用的笔记</span>
 					</a>
 
 					<a class="project-card project-card--blogs" href="https://yetmoremusingsonidentity.substack.com/" target="_blank" rel="noreferrer">
 						<span class="project-art" aria-hidden="true">
 							<span class="blog-bubble"></span>
-							<span class="blog-pencil"></span>
 						</span>
-						<span class="project-type">博客</span>
+						<span class="project-meta"><span class="project-type">博客</span><span class="external-mark" aria-hidden="true">↗</span></span>
 						<span class="project-title" lang="en">Yet More Musings on Identity</span>
 						<span class="project-note">身份、归属、多语育儿、文化疏离、标签化思维（hokjesdenken）</span>
 					</a>
-
-					<div class="project-card project-card--coming" aria-disabled="true">
-						<span class="project-art" aria-hidden="true">
-							<span class="lesson-board">
-								<span>ZH</span>
-								<span>NL</span>
-							</span>
-						</span>
-						<span class="project-type">课程</span>
-						<span class="project-title">我用中文教荷兰语</span>
-						<span class="project-note">即将上线</span>
-					</div>
 				</div>
 			</section>
 		</main>
