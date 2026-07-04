@@ -283,7 +283,7 @@ b {
     overflow: visible;
     border: 1px solid #303030;
     border-radius: 8px;
-    background: #fff8ec;
+    background: #f3f0e7;
 }
 
 .teaching-card.project-card--coming {
@@ -291,7 +291,7 @@ b {
 }
 
 .teaching-card.project-card--coming:hover {
-    background-color: #fff8ec;
+    background-color: #f3f0e7;
 }
 
 .teaching-card-art {
@@ -325,8 +325,8 @@ b {
     inset: 0;
     z-index: 1;
     background:
-        radial-gradient(circle at 66% 30%, #ffffff 0 9%, transparent 10%),
-        linear-gradient(135deg, #f8d867 0 50%, #bfe8e0 50% 100%);
+        radial-gradient(circle at 66% 30%, #fdfcfb 0 9%, transparent 10%),
+        linear-gradient(135deg, #f3f0e7 0 50%, #d7ddc3 50% 100%);
     transition: opacity 180ms ease;
 }
 
@@ -395,7 +395,7 @@ b {
     margin-top: 0;
     font-size: 1.42rem;
     line-height: 1.1;
-    color: #00cccc;
+    color: #303030;
 }
 
 :lang(nl) .teaching-card .project-title {
@@ -483,6 +483,22 @@ b {
     font-size: 1.42rem;
     line-height: 1.08;
     letter-spacing: 0;
+    color: #00cccc;
+}
+
+.project-card:hover .project-title,
+.project-card:focus-visible .project-title {
+    color: #575757;
+}
+
+.project-card--coming:not(.teaching-card) .project-title,
+.project-card--coming:not(.teaching-card):hover .project-title {
+    color: #303030;
+}
+
+.teaching-card .project-title,
+.teaching-card:hover .project-title {
+    color: #303030;
 }
 
 .external-mark {
