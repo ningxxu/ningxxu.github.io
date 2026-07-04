@@ -321,44 +321,75 @@ b {
 }
 
 .teaching-card-art::before {
-    content: "Open here >>";
+    content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
-    display: grid;
-    place-items: center;
-    padding: 1.3rem;
-    font-family: "Roboto Mono", Helvetica, sans-serif;
-    font-size: 1.02rem;
-    font-weight: bold;
-    line-height: 1.15;
-    text-align: center;
-    color: #303030;
     background:
         radial-gradient(circle at 66% 30%, #ffffff 0 9%, transparent 10%),
         linear-gradient(135deg, #f8d867 0 50%, #bfe8e0 50% 100%);
     transition: opacity 180ms ease;
 }
 
-:lang(nl) .teaching-card-art::before {
-    content: "Open hier >>";
+.teaching-card-contact-details {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    align-content: center;
+    justify-items: center;
+    gap: 0.08rem;
+    padding: 1.25rem;
+    font-family: "Roboto Mono", Helvetica, sans-serif;
+    font-size: clamp(0.52rem, 0.35rem + 0.55vw, 0.84rem);
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    color: #303030;
+    transition: opacity 180ms ease;
 }
 
-:lang(zh-CN) .teaching-card-art::before {
-    content: "打开这里 >>";
+.teaching-card-contact-details span {
+    display: block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.teaching-card-contact-title {
+    margin-bottom: 0.55rem;
+    font-family: "Bungee", sans-serif;
+    font-size: 1.16em;
+    line-height: 1;
+}
+
+.teaching-card-contact-details span:nth-child(even) {
+    font-size: 0.9em;
+    color: #4f5f43;
+}
+
+.teaching-card-contact-details span:nth-child(odd):not(.teaching-card-contact-title) {
+    margin-bottom: 0.2rem;
 }
 
 .teaching-card:hover .teaching-card-art img,
 .teaching-card:active .teaching-card-art img,
 .teaching-card-art:hover img,
-.teaching-card-art:active img {
+.teaching-card-art:active img,
+.teaching-card-art.is-touch-revealed img {
     opacity: 1;
 }
 
 .teaching-card:hover .teaching-card-art::before,
 .teaching-card:active .teaching-card-art::before,
 .teaching-card-art:hover::before,
-.teaching-card-art:active::before {
+.teaching-card-art:active::before,
+.teaching-card:hover .teaching-card-contact-details,
+.teaching-card:active .teaching-card-contact-details,
+.teaching-card-art:hover .teaching-card-contact-details,
+.teaching-card-art:active .teaching-card-contact-details,
+.teaching-card-art.is-touch-revealed::before,
+.teaching-card-art.is-touch-revealed .teaching-card-contact-details {
     opacity: 0;
 }
 
@@ -375,8 +406,13 @@ b {
     align-self: auto;
     max-width: 390px;
     margin-top: 0;
-    font-size: 1.55rem;
+    font-size: 1.42rem;
     line-height: 1.1;
+    color: #00cccc;
+}
+
+:lang(nl) .teaching-card .project-title {
+    font-size: 1.26rem;
 }
 
 .teaching-card-details {
@@ -997,9 +1033,13 @@ footer {
     .teaching-card .project-title {
         max-width: 100%;
         margin-top: 0;
-        font-size: 0.96rem;
+        font-size: 0.9rem;
         line-height: 1.12;
         overflow-wrap: anywhere;
+    }
+
+    :lang(nl) .teaching-card .project-title {
+        font-size: 0.84rem;
     }
 
     .teaching-card-details {
@@ -1291,6 +1331,10 @@ footer {
     .teaching-card .project-title {
         margin-top: 0;
         font-size: 0.82rem;
+    }
+
+    :lang(nl) .teaching-card .project-title {
+        font-size: 0.78rem;
     }
 
     .teaching-card-details {

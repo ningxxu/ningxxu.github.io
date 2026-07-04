@@ -85,12 +85,21 @@
 				</div>
 
 				<div class="project-grid project-grid--teaching">
-					<div class="project-card teaching-card project-card--coming" aria-disabled="true">
-						<span class="teaching-card-art" aria-hidden="true">
+					<div class="project-card teaching-card project-card--coming">
+						<span class="teaching-card-art">
+							<span class="teaching-card-contact-details">
+								<span class="teaching-card-contact-title">Contact</span>
+								<span>wechat:</span>
+								<span>ningxxu_helanyuke</span>
+								<span>whatsapp:</span>
+								<span>+31(0)639848055</span>
+								<span>e-mail:</span>
+								<span>dutch@ningxxu.com</span>
+							</span>
 							<img src="../img/course-avatar.png" alt="">
 						</span>
 						<span class="teaching-card-copy">
-							<span class="project-title">Ik Geef Nederlandse Les in het Chinees</span>
+							<span class="project-title">Nederlandse Les in het Chinees</span>
 							<span class="teaching-card-details">
 								<span>· <b>Beginnerscursus</b>: vanaf nul beginnen en ontspannen Nederlands durven spreken</span>
 								<span>· <b>Grammaticacursus</b>: grammatica leren in het Chinees, de structuur makkelijker begrijpen en echt Nederlands gaan gebruiken</span>
@@ -232,6 +241,23 @@
 					if (isTouch) return; // Don't trigger on touch
 					// Optionally, toggle image on click for non-touch
 				});
+
+				var courseArt = document.querySelector('.teaching-card-art');
+				if (courseArt) {
+					var courseArtTimer;
+					courseArt.addEventListener('touchstart', function(e) {
+						clearTimeout(courseArtTimer);
+						courseArt.classList.add('is-touch-revealed');
+					});
+					courseArt.addEventListener('touchend', function(e) {
+						courseArtTimer = setTimeout(function() {
+							courseArt.classList.remove('is-touch-revealed');
+						}, 900);
+					});
+					courseArt.addEventListener('touchcancel', function(e) {
+						courseArt.classList.remove('is-touch-revealed');
+					});
+				}
 			});
 		</script>
 

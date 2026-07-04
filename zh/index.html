@@ -53,7 +53,7 @@
 				<nav class="site-nav" aria-label="网站导航">
 					<a href="#about">关于我</a>
 					<span aria-hidden="true">·</span>
-					<a href="#teaching">荷兰语课</a>
+					<a href="#teaching">教学荷兰语</a>
 					<span aria-hidden="true">·</span>
 					<a href="#building">创造</a>
 					<span aria-hidden="true">·</span>
@@ -81,16 +81,25 @@
 
 			<section id="teaching" class="projects" aria-labelledby="teaching-title">
 				<div class="section-heading">
-					<h2 id="teaching-title">荷兰语课</h2>
+					<h2 id="teaching-title">教学荷兰语</h2>
 				</div>
 
 				<div class="project-grid project-grid--teaching">
-					<div class="project-card teaching-card project-card--coming" aria-disabled="true">
-						<span class="teaching-card-art" aria-hidden="true">
+					<div class="project-card teaching-card project-card--coming">
+						<span class="teaching-card-art">
+							<span class="teaching-card-contact-details">
+								<span class="teaching-card-contact-title">Contact</span>
+								<span>微信:</span>
+								<span>ningxxu_helanyuke</span>
+								<span>whatsapp:</span>
+								<span>+31(0)639848055</span>
+								<span>邮件:</span>
+								<span>dutch@ningxxu.com</span>
+							</span>
 							<img src="../img/course-avatar.png" alt="">
 						</span>
 						<span class="teaching-card-copy">
-							<span class="project-title">我用中文教荷兰语</span>
+							<span class="project-title">中文荷兰语课</span>
 							<span class="teaching-card-details">
 								<span>· <b>初级课</b>：从零开始 放松开口说荷兰语</span>
 								<span>· <b>语法课</b>：中文学习语法 更易理解结构 帮助真正开始使用荷兰语</span>
@@ -232,6 +241,23 @@
 					if (isTouch) return; // Don't trigger on touch
 					// Optionally, toggle image on click for non-touch
 				});
+
+				var courseArt = document.querySelector('.teaching-card-art');
+				if (courseArt) {
+					var courseArtTimer;
+					courseArt.addEventListener('touchstart', function(e) {
+						clearTimeout(courseArtTimer);
+						courseArt.classList.add('is-touch-revealed');
+					});
+					courseArt.addEventListener('touchend', function(e) {
+						courseArtTimer = setTimeout(function() {
+							courseArt.classList.remove('is-touch-revealed');
+						}, 900);
+					});
+					courseArt.addEventListener('touchcancel', function(e) {
+						courseArt.classList.remove('is-touch-revealed');
+					});
+				}
 			});
 		</script>
 
