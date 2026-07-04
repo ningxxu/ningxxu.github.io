@@ -66,7 +66,7 @@
 				<span aria-hidden="true">|</span>
 				<a href="../zh/index.html" lang="zh" aria-current="page">ZH</a>
 			</nav>
-				<a class="logo" href="./index.html" aria-label="Home"></a>
+				<span class="logo" role="img" aria-label="Ning Xu avatar"></span>
 		</header>
 
 
@@ -88,7 +88,7 @@
 					<div class="project-card teaching-card project-card--coming">
 						<span class="teaching-card-art">
 							<span class="teaching-card-contact-details">
-								<span class="teaching-card-contact-title">Contact</span>
+								<span class="teaching-card-contact-title">联系</span>
 								<span>微信:</span>
 								<span>ningxxu_helanyuke</span>
 								<span>whatsapp:</span>
@@ -101,8 +101,8 @@
 						<span class="teaching-card-copy">
 							<span class="project-title">中文荷兰语课</span>
 							<span class="teaching-card-details">
-								<span>· <b>初级课</b>：从零开始 放松开口说荷兰语</span>
-								<span>· <b>语法课</b>：中文学习语法 更易理解结构 帮助真正开始使用荷兰语</span>
+								<span>🌱 <b>初级课</b>：从零开始，放松开口说荷兰语</span>
+								<span>🧩 <b>语法课</b>：用中文理解荷兰语结构，真正开始用起来</span>
 							</span>
 						</span>
 					</div>
@@ -213,49 +213,33 @@
 		</footer>
 
 		<script>
-			// Touch support for .logo hover effect
+			// Sticky reveal toggles for hover and touch.
 			document.addEventListener('DOMContentLoaded', function() {
 				var logo = document.querySelector('.logo');
-				if (!logo) return;
-				var originalBg = 'url("../img/Ning_avatar.png") no-repeat left center / contain';
-				var hoverBg = 'url("../img/Ning_photo.png") no-repeat left center / contain';
-
-				// For touch devices
-				var isTouch = false;
-				logo.addEventListener('touchstart', function(e) {
-					isTouch = true;
-					logo.style.background = hoverBg;
-				});
-				logo.addEventListener('touchend', function(e) {
-					// Delay to allow tap/click if needed
-					setTimeout(function() {
-						logo.style.background = originalBg;
-					}, 300);
-				});
-				// Optional: revert on touchcancel (e.g. scroll)
-				logo.addEventListener('touchcancel', function(e) {
-					logo.style.background = originalBg;
-				});
-				// Also support click for accessibility (optional)
-				logo.addEventListener('click', function(e) {
-					if (isTouch) return; // Don't trigger on touch
-					// Optionally, toggle image on click for non-touch
-				});
+				if (logo) {
+					logo.addEventListener('pointerenter', function(e) {
+						if (e.pointerType === 'mouse') {
+							logo.classList.toggle('is-revealed');
+						}
+					});
+					logo.addEventListener('pointerdown', function(e) {
+						if (e.pointerType !== 'mouse') {
+							logo.classList.toggle('is-revealed');
+						}
+					});
+				}
 
 				var courseArt = document.querySelector('.teaching-card-art');
 				if (courseArt) {
-					var courseArtTimer;
-					courseArt.addEventListener('touchstart', function(e) {
-						clearTimeout(courseArtTimer);
-						courseArt.classList.add('is-touch-revealed');
+					courseArt.addEventListener('pointerenter', function(e) {
+						if (e.pointerType === 'mouse') {
+							courseArt.classList.toggle('is-revealed');
+						}
 					});
-					courseArt.addEventListener('touchend', function(e) {
-						courseArtTimer = setTimeout(function() {
-							courseArt.classList.remove('is-touch-revealed');
-						}, 900);
-					});
-					courseArt.addEventListener('touchcancel', function(e) {
-						courseArt.classList.remove('is-touch-revealed');
+					courseArt.addEventListener('pointerdown', function(e) {
+						if (e.pointerType !== 'mouse') {
+							courseArt.classList.toggle('is-revealed');
+						}
 					});
 				}
 			});

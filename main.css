@@ -81,8 +81,7 @@ main {
     background: url("./img/Ning_avatar.png") no-repeat left center / contain;
 }
 
-.logo:hover,
-.logo:active {
+.logo.is-revealed {
     background-image: url("./img/Ning_photo.png");
 }
 
@@ -357,7 +356,7 @@ b {
 }
 
 .teaching-card-contact-title {
-    margin-bottom: 0.55rem;
+    margin-bottom: 1.15rem;
     font-family: "Bungee", sans-serif;
     font-size: 1.16em;
     line-height: 1;
@@ -372,24 +371,12 @@ b {
     margin-bottom: 0.2rem;
 }
 
-.teaching-card:hover .teaching-card-art img,
-.teaching-card:active .teaching-card-art img,
-.teaching-card-art:hover img,
-.teaching-card-art:active img,
-.teaching-card-art.is-touch-revealed img {
+.teaching-card-art.is-revealed img {
     opacity: 1;
 }
 
-.teaching-card:hover .teaching-card-art::before,
-.teaching-card:active .teaching-card-art::before,
-.teaching-card-art:hover::before,
-.teaching-card-art:active::before,
-.teaching-card:hover .teaching-card-contact-details,
-.teaching-card:active .teaching-card-contact-details,
-.teaching-card-art:hover .teaching-card-contact-details,
-.teaching-card-art:active .teaching-card-contact-details,
-.teaching-card-art.is-touch-revealed::before,
-.teaching-card-art.is-touch-revealed .teaching-card-contact-details {
+.teaching-card-art.is-revealed::before,
+.teaching-card-art.is-revealed .teaching-card-contact-details {
     opacity: 0;
 }
 
