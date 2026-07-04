@@ -13,6 +13,10 @@
     --project-aqua: #b8d0ea;
     --writing-gold: #efd38f;
     --writing-peach: #f2cba8;
+    --na2-sage: #aaa978;
+    --na2-coral: #df785b;
+    --na2-gold: #e2a645;
+    --na2-cream: #f6edd8;
 }
 
 * {
@@ -416,6 +420,108 @@ b {
     display: block;
 }
 
+.project-grid--na2 {
+    width: calc(100% - 4px);
+}
+
+.na2-card {
+    display: block;
+    min-height: 210px;
+    padding: 1.35rem 16.2rem 1.25rem 1.35rem;
+    overflow: visible;
+    border: 1px solid #303030;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0) 62%),
+        var(--na2-cream);
+}
+
+.na2-card:hover,
+.na2-card:focus-visible {
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0) 62%),
+        #f2e3c4;
+}
+
+.na2-card-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 158px;
+}
+
+.na2-card .project-title,
+.na2-card:hover .project-title,
+.na2-card:focus-visible .project-title {
+    display: block;
+    align-self: auto;
+    max-width: 360px;
+    margin-top: 0;
+    color: #303030;
+}
+
+.na2-card .project-note {
+    display: block;
+    align-self: auto;
+    max-width: 360px;
+    color: #4f4f4f;
+}
+
+.na2-card-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.9rem;
+    padding: 0.28rem 0.55rem;
+    border: 2px solid #303030;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #303030;
+    background: #fffaf0;
+    box-shadow: 2px 2px 0 var(--na2-gold);
+}
+
+.na2-card-logo {
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    display: grid;
+    place-items: center;
+    width: 270px;
+    height: 164px;
+    padding: 1.1rem 1rem;
+    overflow: hidden;
+    border: 2px solid #303030;
+    border-radius: 8px;
+    background:
+        radial-gradient(circle at 78% 72%, rgba(226, 166, 69, 0.4) 0 15%, transparent 16%),
+        linear-gradient(135deg, #eee7c8 0 44%, #f0b5a8 44% 72%, #efc37b 72% 100%);
+    box-shadow: 5px 5px 0 var(--na2-coral);
+    transform: translateY(-50%);
+}
+
+.na2-card-logo::before {
+    content: "";
+    position: absolute;
+    inset: 0.7rem 0.55rem;
+    z-index: 0;
+    border-radius: 6px;
+    background: rgba(253, 252, 251, 0.58);
+    filter: blur(10px);
+}
+
+.na2-card-logo img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .project-art {
     position: relative;
     display: block;
@@ -431,11 +537,11 @@ b {
 }
 
 .project-card--dutch .project-art {
-    background: var(--writing-gold);
+    background: var(--accent-yellow);
 }
 
 .project-card--beliefs .project-art {
-    background: var(--project-mint);
+    background: #ffdf3f;
 }
 
 .project-card--languages .project-art {
@@ -989,6 +1095,10 @@ footer {
         margin-right: 0;
     }
 
+    .project-grid--na2 {
+        width: calc(100% - 3px);
+    }
+
     .principles-link {
         border-left-width: 4px;
     }
@@ -1051,6 +1161,42 @@ footer {
         max-width: 100%;
         font-size: 0.62rem;
         line-height: 1.38;
+    }
+
+    .na2-card {
+        min-height: 214px;
+        padding: 1rem 11rem 1rem 0.95rem;
+    }
+
+    .na2-card-copy {
+        min-height: 172px;
+    }
+
+    .na2-card .project-title {
+        max-width: 100%;
+        font-size: 0.98rem;
+        line-height: 1.12;
+    }
+
+    .na2-card .project-note {
+        max-width: 100%;
+        font-size: 0.62rem;
+        line-height: 1.38;
+    }
+
+    .na2-card-action {
+        margin-top: 0.7rem;
+        padding: 0.24rem 0.45rem;
+        font-size: 0.56rem;
+    }
+
+    .na2-card-logo {
+        top: 50%;
+        right: -2px;
+        width: 172px;
+        height: 108px;
+        padding: 0.8rem 0.65rem;
+        box-shadow: 3px 3px 0 var(--na2-coral);
     }
 
     .project-art {
@@ -1345,6 +1491,39 @@ footer {
         margin-top: 0.45rem;
         font-size: 0.53rem;
         line-height: 1.3;
+    }
+
+    .na2-card {
+        min-height: 154px;
+        padding: 0.8rem 9.25rem 0.75rem 0.85rem;
+    }
+
+    .na2-card-copy {
+        min-height: 126px;
+    }
+
+    .na2-card .project-title {
+        margin-top: 0;
+        font-size: 0.88rem;
+    }
+
+    .na2-card .project-note {
+        font-size: 0.56rem;
+        line-height: 1.32;
+        max-width: 9rem;
+    }
+
+    .na2-card-action {
+        margin-top: 0.45rem;
+        font-size: 0.5rem;
+    }
+
+    .na2-card-logo {
+        top: 50%;
+        right: -2px;
+        width: 154px;
+        height: 96px;
+        padding: 0.75rem 0.55rem;
     }
 
     .project-art {
