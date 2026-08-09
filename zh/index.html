@@ -50,15 +50,6 @@
 		<body>
 
 			<header>
-				<nav class="site-nav" aria-label="网站导航">
-					<a href="#about">关于</a>
-					<span aria-hidden="true">·</span>
-					<a href="#teaching">教学荷兰语</a>
-					<span aria-hidden="true">·</span>
-					<a href="#building">创造</a>
-					<span aria-hidden="true">·</span>
-					<a href="#writing">写作</a>
-				</nav>
 				<nav class="language-switcher" aria-label="Language">
 				<a href="../index.html" lang="en">EN</a>
 				<span aria-hidden="true">|</span>
@@ -79,32 +70,31 @@
 				</div>
 			</section>
 
-			<section id="teaching" class="projects" aria-labelledby="teaching-title">
+			<section id="tinkering" class="projects" aria-labelledby="tinkering-title">
 				<div class="section-heading">
-					<h2 id="teaching-title">教学荷兰语</h2>
+					<h2 id="tinkering-title">探索</h2>
 				</div>
 
-				<div class="project-grid project-grid--teaching">
-					<div class="project-card teaching-card project-card--coming">
-						<span class="teaching-card-art">
-							<span class="teaching-card-contact-details">
-								<span class="teaching-card-contact-title">联系</span>
+				<div class="project-grid project-grid--tinkering">
+					<div class="project-card tinkering-card project-card--coming">
+						<span class="tinkering-card-art">
+							<span class="tinkering-card-contact-details">
+								<span class="tinkering-card-contact-title">联系</span>
 								<span>instagram:</span>
 								<span>ningxxu.nl</span>
-								<span>微信:</span>
-								<span>ningxxu_helanyuke</span>
 								<span>whatsapp:</span>
 								<span>+31(0)639848055</span>
-								<span>邮件:</span>
-								<span>dutch@ningxxu.com</span>
+								<span>微信:</span>
+								<span>ningxxu_helanyuke</span>
 							</span>
-							<img src="../img/course-avatar.png" alt="">
+							<img src="../img/avatar-tinkering.png" alt="">
 						</span>
-						<span class="teaching-card-copy">
-							<span class="project-title">中文荷兰语课</span>
-							<span class="teaching-card-details">
-								<span>🌱 <b>初级课</b>：从零开始，放松开口说荷兰语</span>
-								<span>🧩 <b>语法课</b>：用中文理解荷兰语结构，真正开始用起来</span>
+						<span class="tinkering-card-copy">
+							<span class="project-title">流动的语言与归属感</span>
+							<span class="tinkering-card-details">
+								<span>🥭 <b>食物与语言工作坊</b>：追寻“mango/芒果”、“金桔/kumquat”这样的词语，看食物如何穿梭于不同地域、语言与文化之间</span>
+								<span>🧭 <b>移民与身份认同研究</b>：探索语言、归属感、歧视与家庭生活如何塑造移民的经历</span>
+								<span>🌱 <b>中文荷兰语课</b>：理解荷兰语，并自在地将它运用到日常生活中</span>
 							</span>
 						</span>
 					</div>
@@ -201,16 +191,16 @@
 					});
 				}
 
-				var courseArt = document.querySelector('.teaching-card-art');
-				if (courseArt) {
-					courseArt.addEventListener('pointerenter', function(e) {
+				var tinkeringArt = document.querySelector('.tinkering-card-art');
+				if (tinkeringArt) {
+					tinkeringArt.addEventListener('pointerenter', function(e) {
 						if (e.pointerType === 'mouse') {
-							courseArt.classList.toggle('is-revealed');
+							tinkeringArt.classList.toggle('is-revealed');
 						}
 					});
-					courseArt.addEventListener('pointerdown', function(e) {
+					tinkeringArt.addEventListener('pointerdown', function(e) {
 						if (e.pointerType !== 'mouse') {
-							courseArt.classList.toggle('is-revealed');
+							tinkeringArt.classList.toggle('is-revealed');
 						}
 					});
 				}

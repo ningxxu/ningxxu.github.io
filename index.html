@@ -50,15 +50,6 @@
 		<body>
 
 			<header>
-				<nav class="site-nav" aria-label="Site">
-					<a href="#about">About</a>
-					<span aria-hidden="true">·</span>
-					<a href="#teaching">Teaching Dutch</a>
-					<span aria-hidden="true">·</span>
-					<a href="#building">Building</a>
-					<span aria-hidden="true">·</span>
-					<a href="#writing">Writing</a>
-				</nav>
 				<nav class="language-switcher" aria-label="Language">
 				<a href="./index.html" lang="en" aria-current="page">EN</a>
 				<span aria-hidden="true">|</span>
@@ -79,32 +70,31 @@
 				</div>
 			</section>
 
-			<section id="teaching" class="projects" aria-labelledby="teaching-title">
+			<section id="tinkering" class="projects" aria-labelledby="tinkering-title">
 				<div class="section-heading">
-					<h2 id="teaching-title">Teaching Dutch</h2>
+					<h2 id="tinkering-title">Tinkering</h2>
 				</div>
 
-				<div class="project-grid project-grid--teaching">
-					<div class="project-card teaching-card project-card--coming">
-						<span class="teaching-card-art">
-							<span class="teaching-card-contact-details">
-								<span class="teaching-card-contact-title">Contact</span>
+				<div class="project-grid project-grid--tinkering">
+					<div class="project-card tinkering-card project-card--coming">
+						<span class="tinkering-card-art">
+							<span class="tinkering-card-contact-details">
+								<span class="tinkering-card-contact-title">Contact</span>
 								<span>instagram:</span>
 								<span>ningxxu.nl</span>
-								<span>wechat:</span>
-								<span>ningxxu_helanyuke</span>
 								<span>whatsapp:</span>
 								<span>+31(0)639848055</span>
-								<span>e-mail:</span>
-								<span>dutch@ningxxu.com</span>
+								<span>wechat:</span>
+								<span>ningxxu_helanyuke</span>
 							</span>
-							<img src="./img/course-avatar.png" alt="">
+							<img src="./img/avatar-tinkering.png" alt="">
 						</span>
-						<span class="teaching-card-copy">
-							<span class="project-title">Dutch Lessons in Chinese</span>
-							<span class="teaching-card-details">
-								<span>🌱 <b>Beginner course</b>: start from zero and feel relaxed speaking Dutch</span>
-								<span>🧩 <b>Grammar course</b>: understand Dutch grammar in Chinese, then start truly using it</span>
+						<span class="tinkering-card-copy">
+							<span class="project-title">Words &amp; Belonging</span>
+							<span class="tinkering-card-details">
+								<span>🥭 <b>Food &amp; language workshops</b>: follow words such as “mango/芒果”, “金桔/kumquat” as food travels between places, languages, and cultures</span>
+								<span>🧭 <b>Migration &amp; identity research</b>: explore how language, belonging, discrimination, and family life shape immigrant experiences</span>
+								<span>🌱 <b>Dutch lessons in Chinese</b>: learn to understand Dutch and feel comfortable using it in everyday life</span>
 							</span>
 						</span>
 					</div>
@@ -201,16 +191,16 @@
 					});
 				}
 
-				var courseArt = document.querySelector('.teaching-card-art');
-				if (courseArt) {
-					courseArt.addEventListener('pointerenter', function(e) {
+				var tinkeringArt = document.querySelector('.tinkering-card-art');
+				if (tinkeringArt) {
+					tinkeringArt.addEventListener('pointerenter', function(e) {
 						if (e.pointerType === 'mouse') {
-							courseArt.classList.toggle('is-revealed');
+							tinkeringArt.classList.toggle('is-revealed');
 						}
 					});
-					courseArt.addEventListener('pointerdown', function(e) {
+					tinkeringArt.addEventListener('pointerdown', function(e) {
 						if (e.pointerType !== 'mouse') {
-							courseArt.classList.toggle('is-revealed');
+							tinkeringArt.classList.toggle('is-revealed');
 						}
 					});
 				}

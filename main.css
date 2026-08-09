@@ -7,14 +7,20 @@
     --accent-yellow: #ffef88;
     --accent-coral: #ffb997;
     --accent-teal: #86d5c3;
+    --signal-teal: #00cccc;
+    --signal-teal-deep: #007f82;
+    --signal-teal-soft: #e5f8f6;
     --project-lavender: #c7d1f2;
     --project-blue: #bcdce8;
     --project-mint: #c4e2d7;
     --project-aqua: #b8d0ea;
-    --writing-gold: #efd38f;
-    --writing-peach: #f2cba8;
+    --writing-seafoam: #c4ded3;
+    --writing-apricot: #eac79f;
+    --writing-coral: #f2b6a0;
     --na2-sage: #aaa978;
     --na2-coral: #df785b;
+    --na2-sage-light: #d1d0b8;
+    --na2-coral-light: #eab8a6;
     --na2-gold: #e2a645;
     --na2-cream: #f6edd8;
 }
@@ -42,7 +48,7 @@ hr {
 
 header {
     position: relative;
-    padding: calc(3em + 10px) 0 1em;
+    padding: 1.35rem 0 1em;
 }
 
 .language-switcher {
@@ -134,7 +140,7 @@ b {
     scroll-margin-top: 1rem;
 }
 
-#teaching {
+#tinkering {
     margin-top: 2rem;
 }
 
@@ -144,31 +150,6 @@ b {
 
 .projects--writing {
     margin-top: 1.75rem;
-}
-
-.site-nav {
-    position: absolute;
-    top: 1.35rem;
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    font-size: 0.72rem;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.site-nav span {
-    color: #a0a0a0;
-}
-
-.site-nav a {
-    color: #575757;
-}
-
-.site-nav a:hover,
-.site-nav a:active {
-    color: #00a9a9;
 }
 
 .section-heading {
@@ -200,7 +181,7 @@ b {
     width: calc(100% - 4px);
 }
 
-.project-grid--teaching {
+.project-grid--tinkering {
     width: calc(100% - 4px);
     margin-right: 0;
 }
@@ -279,26 +260,26 @@ b {
     background-color: #ffffff;
 }
 
-.teaching-card {
+.tinkering-card {
     display: block;
     align-items: center;
-    min-height: 210px;
-    padding: 1.35rem 15.4rem 1.25rem 1.35rem;
+    min-height: 270px;
+    padding: 1.5rem 15.4rem 1.5rem 1.35rem;
     overflow: visible;
     border: 1px solid #303030;
     border-radius: 8px;
-    background: #f3f0e7;
+    background: var(--signal-teal-soft);
 }
 
-.teaching-card.project-card--coming {
+.tinkering-card.project-card--coming {
     opacity: 1;
 }
 
-.teaching-card.project-card--coming:hover {
-    background-color: #f3f0e7;
+.tinkering-card.project-card--coming:hover {
+    background-color: var(--signal-teal-soft);
 }
 
-.teaching-card-art {
+.tinkering-card-art {
     position: absolute;
     top: auto;
     right: 0;
@@ -310,11 +291,11 @@ b {
     border: 2px solid #303030;
     border-radius: 50%;
     background: #fdfcfb;
-    box-shadow: 5px 5px 0 #788252;
+    box-shadow: 5px 5px 0 var(--signal-teal-deep);
     cursor: default;
 }
 
-.teaching-card-art img {
+.tinkering-card-art img {
     display: block;
     width: 100%;
     height: 100%;
@@ -323,29 +304,29 @@ b {
     transition: opacity 180ms ease;
 }
 
-.teaching-card-art::before {
+.tinkering-card-art::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
     background:
         radial-gradient(circle at 66% 30%, #fdfcfb 0 9%, transparent 10%),
-        linear-gradient(135deg, #f3f0e7 0 50%, #d7ddc3 50% 100%);
+        linear-gradient(135deg, #fdfcfb 0 50%, #b8eeee 50% 100%);
     transition: opacity 180ms ease;
 }
 
-.teaching-card-contact-details {
+.tinkering-card-contact-details {
     position: absolute;
     inset: 0;
     z-index: 2;
     display: grid;
-    grid-template-rows: repeat(9, auto);
+    grid-template-rows: repeat(7, auto);
     align-content: center;
     justify-items: center;
     gap: 0.08rem;
     padding: 1.25rem;
     font-family: "Roboto Mono", Helvetica, sans-serif;
-    font-size: clamp(0.52rem, 0.35rem + 0.55vw, 0.84rem);
+    font-size: clamp(0.6rem, 0.4rem + 0.62vw, 0.95rem);
     font-weight: normal;
     line-height: 1.25;
     text-align: center;
@@ -353,47 +334,47 @@ b {
     transition: opacity 180ms ease;
 }
 
-.teaching-card-contact-details span {
+.tinkering-card-contact-details span {
     display: block;
     max-width: 100%;
     overflow-wrap: anywhere;
 }
 
-.teaching-card-contact-title {
+.tinkering-card-contact-title {
     margin-bottom: 1.15rem;
     font-family: "Bungee", sans-serif;
     font-size: 1.16em;
     line-height: 1;
 }
 
-.teaching-card-contact-details span:nth-child(even) {
+.tinkering-card-contact-details span:nth-child(even) {
     font-size: 0.9em;
-    color: #4f5f43;
+    color: var(--signal-teal-deep);
 }
 
-.teaching-card-contact-details span:nth-child(odd):not(.teaching-card-contact-title) {
+.tinkering-card-contact-details span:nth-child(odd):not(.tinkering-card-contact-title) {
     margin-bottom: 0.2rem;
 }
 
-.teaching-card-art.is-revealed img {
+.tinkering-card-art.is-revealed img {
     opacity: 1;
 }
 
-.teaching-card-art.is-revealed::before,
-.teaching-card-art.is-revealed .teaching-card-contact-details {
+.tinkering-card-art.is-revealed::before,
+.tinkering-card-art.is-revealed .tinkering-card-contact-details {
     opacity: 0;
 }
 
-.teaching-card-copy {
+.tinkering-card-copy {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     min-width: 0;
-    min-height: 158px;
+    min-height: 218px;
 }
 
-.teaching-card .project-title {
+.tinkering-card .project-title {
     align-self: auto;
     max-width: 390px;
     margin-top: 0;
@@ -402,21 +383,21 @@ b {
     color: #303030;
 }
 
-:lang(nl) .teaching-card .project-title {
+:lang(nl) .tinkering-card .project-title {
     font-size: 1.26rem;
 }
 
-.teaching-card-details {
+.tinkering-card-details {
     display: grid;
     gap: 0.45rem;
-    margin-top: 0.8rem;
+    margin-top: 1.6rem;
     max-width: 390px;
     font-size: 0.75rem;
     line-height: 1.45;
     color: #4f4f4f;
 }
 
-.teaching-card-details span {
+.tinkering-card-details span {
     display: block;
 }
 
@@ -533,15 +514,15 @@ b {
 }
 
 .project-card--blogs .project-art {
-    background: var(--writing-peach);
+    background: var(--writing-coral);
 }
 
 .project-card--dutch .project-art {
-    background: var(--accent-yellow);
+    background: var(--writing-seafoam);
 }
 
 .project-card--beliefs .project-art {
-    background: #ffdf3f;
+    background: var(--writing-apricot);
 }
 
 .project-card--languages .project-art {
@@ -597,13 +578,13 @@ b {
     color: #575757;
 }
 
-.project-card--coming:not(.teaching-card) .project-title,
-.project-card--coming:not(.teaching-card):hover .project-title {
+.project-card--coming:not(.tinkering-card) .project-title,
+.project-card--coming:not(.tinkering-card):hover .project-title {
     color: #303030;
 }
 
-.teaching-card .project-title,
-.teaching-card:hover .project-title {
+.tinkering-card .project-title,
+.tinkering-card:hover .project-title {
     color: #303030;
 }
 
@@ -808,6 +789,7 @@ html[lang="zh-CN"] .text {
     border-radius: 50%;
     font-family: "Bungee", sans-serif;
     font-size: 1rem;
+    color: #303030;
     background: var(--cream);
     box-shadow: 2px 2px 0 #303030;
 }
@@ -820,13 +802,13 @@ html[lang="zh-CN"] .text {
 .speech-two {
     top: 80px;
     left: 78px;
-    background: var(--accent-yellow);
+    background: var(--na2-coral-light);
 }
 
 .speech-three {
     top: 36px;
     right: 28px;
-    background: var(--accent-coral);
+    background: var(--na2-sage-light);
 }
 
 .speech-four {
@@ -834,7 +816,7 @@ html[lang="zh-CN"] .text {
     bottom: 24px;
     font-family: "Noto Sans SC", sans-serif;
     font-weight: 900;
-    background: var(--accent-yellow);
+    background: var(--signal-teal-soft);
 }
 
 .view-mark {
@@ -1028,7 +1010,7 @@ footer {
     }
 
     header {
-        padding-top: calc(3em + 10px);
+        padding-top: 1.25rem;
         padding-bottom: 0.65em;
     }
 
@@ -1066,12 +1048,6 @@ footer {
         margin-top: 1.35rem;
     }
 
-    .site-nav {
-        top: 1.25rem;
-        gap: 0.25rem;
-        font-size: 0.62rem;
-    }
-
     .section-heading {
         margin-bottom: 0.85rem;
     }
@@ -1090,7 +1066,7 @@ footer {
         width: calc(100% - 3px);
     }
 
-    .project-grid--teaching {
+    .project-grid--tinkering {
         width: calc(100% - 3px);
         margin-right: 0;
     }
@@ -1126,24 +1102,24 @@ footer {
         padding: 0.75rem;
     }
 
-    .teaching-card {
-        min-height: 214px;
+    .tinkering-card {
+        min-height: 250px;
         padding: 1rem 11rem 1rem 0.95rem;
     }
 
-    .teaching-card-art {
-        top: -1.15rem;
+    .tinkering-card-art {
+        top: auto;
         right: 0;
-        bottom: auto;
+        bottom: 0;
         width: 164px;
-        box-shadow: 3px 3px 0 #788252;
+        box-shadow: 3px 3px 0 var(--signal-teal-deep);
     }
 
-    .teaching-card-copy {
-        min-height: 172px;
+    .tinkering-card-copy {
+        min-height: 218px;
     }
 
-    .teaching-card .project-title {
+    .tinkering-card .project-title {
         max-width: 100%;
         margin-top: 0;
         font-size: 0.9rem;
@@ -1151,13 +1127,13 @@ footer {
         overflow-wrap: anywhere;
     }
 
-    :lang(nl) .teaching-card .project-title {
+    :lang(nl) .tinkering-card .project-title {
         font-size: 0.84rem;
     }
 
-    .teaching-card-details {
+    .tinkering-card-details {
         gap: 0.35rem;
-        margin-top: 0.55rem;
+        margin-top: 1.2rem;
         max-width: 100%;
         font-size: 0.62rem;
         line-height: 1.38;
@@ -1185,7 +1161,7 @@ footer {
     }
 
     .na2-card-action {
-        margin-top: 0.7rem;
+        margin-top: 0.95rem;
         padding: 0.24rem 0.45rem;
         font-size: 0.56rem;
     }
@@ -1444,28 +1420,18 @@ footer {
 }
 
 @media (max-width: 360px) {
-    header {
-        padding-top: calc(4.25em + 10px);
-    }
-
-    .site-nav {
-        right: 5.5rem;
-        row-gap: 0.35rem;
-        line-height: 1.2;
-    }
-
     .project-card {
         grid-template-columns: 1fr;
         grid-template-rows: 170px auto auto auto;
         min-height: 0;
     }
 
-    .teaching-card {
-        min-height: 154px;
-        padding: 0.8rem 9.25rem 0.75rem 0.85rem;
+    .tinkering-card {
+        min-height: 220px;
+        padding: 0.9rem 9.25rem 0.85rem 0.85rem;
     }
 
-    .teaching-card-art {
+    .tinkering-card-art {
         top: auto;
         right: 0;
         bottom: 0;
@@ -1473,22 +1439,22 @@ footer {
         margin-bottom: 0;
     }
 
-    .teaching-card-copy {
-        min-height: 126px;
+    .tinkering-card-copy {
+        min-height: 188px;
     }
 
-    .teaching-card .project-title {
+    .tinkering-card .project-title {
         margin-top: 0;
         font-size: 0.82rem;
     }
 
-    :lang(nl) .teaching-card .project-title {
+    :lang(nl) .tinkering-card .project-title {
         font-size: 0.78rem;
     }
 
-    .teaching-card-details {
+    .tinkering-card-details {
         gap: 0.24rem;
-        margin-top: 0.45rem;
+        margin-top: 0.7rem;
         font-size: 0.53rem;
         line-height: 1.3;
     }
