@@ -383,6 +383,19 @@ b {
     color: #303030;
 }
 
+.tinkering-card-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tinkering-card-status {
+	margin-top: 0;
+    font-size: 0.72rem;
+    line-height: 1.3;
+    color: #777;
+}
+
 :lang(nl) .tinkering-card .project-title {
     font-size: 1.26rem;
 }
@@ -408,7 +421,7 @@ b {
 .na2-card {
     display: block;
     min-height: 210px;
-    padding: 1.35rem 16.2rem 1.25rem 1.35rem;
+    padding: 1.35rem 1.35rem 1.25rem 19rem;
     overflow: visible;
     border: 1px solid #303030;
     background:
@@ -424,12 +437,18 @@ b {
 }
 
 .na2-card-copy {
+    position: absolute;
+    top: calc(50% - 82px);
+    bottom: calc(50% - 82px);
+    right: 1.35rem;
+    left: 18.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     min-width: 0;
-    min-height: 158px;
+    min-height: 0;
+    text-align: left;
 }
 
 .na2-card .project-title,
@@ -450,10 +469,11 @@ b {
 }
 
 .na2-card-action {
+    align-self: flex-end;
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    margin-top: 0.9rem;
+    margin-top: auto;
     padding: 0.28rem 0.55rem;
     border: 2px solid #303030;
     border-radius: 999px;
@@ -469,7 +489,7 @@ b {
 .na2-card-logo {
     position: absolute;
     top: 50%;
-    right: -2px;
+    left: -2px;
     display: grid;
     place-items: center;
     width: 270px;
@@ -480,8 +500,8 @@ b {
     border-radius: 8px;
     background:
         radial-gradient(circle at 78% 72%, rgba(226, 166, 69, 0.4) 0 15%, transparent 16%),
-        linear-gradient(135deg, #eee7c8 0 44%, #f0b5a8 44% 72%, #efc37b 72% 100%);
-    box-shadow: 5px 5px 0 var(--na2-coral);
+        linear-gradient(225deg, #eee7c8 0 44%, #f0b5a8 44% 72%, #efc37b 72% 100%);
+    box-shadow: -5px 5px 0 var(--na2-coral);
     transform: translateY(-50%);
 }
 
@@ -1141,11 +1161,14 @@ footer {
 
     .na2-card {
         min-height: 214px;
-        padding: 1rem 11rem 1rem 0.95rem;
+        padding: 1rem 0.95rem 1rem 12.5rem;
     }
 
     .na2-card-copy {
-        min-height: 172px;
+        top: calc(50% - 54px);
+        bottom: calc(50% - 54px);
+        right: 0.95rem;
+        left: 12rem;
     }
 
     .na2-card .project-title {
@@ -1161,18 +1184,18 @@ footer {
     }
 
     .na2-card-action {
-        margin-top: 0.95rem;
+        margin-top: auto;
         padding: 0.24rem 0.45rem;
         font-size: 0.56rem;
     }
 
     .na2-card-logo {
         top: 50%;
-        right: -2px;
+        left: -2px;
         width: 172px;
         height: 108px;
         padding: 0.8rem 0.65rem;
-        box-shadow: 3px 3px 0 var(--na2-coral);
+        box-shadow: -3px 3px 0 var(--na2-coral);
     }
 
     .project-art {
@@ -1461,11 +1484,14 @@ footer {
 
     .na2-card {
         min-height: 154px;
-        padding: 0.8rem 9.25rem 0.75rem 0.85rem;
+        padding: 0.8rem 0.85rem 0.75rem 11rem;
     }
 
     .na2-card-copy {
-        min-height: 126px;
+        top: calc(50% - 48px);
+        bottom: calc(50% - 48px);
+        right: 0.85rem;
+        left: 11rem;
     }
 
     .na2-card .project-title {
@@ -1480,13 +1506,13 @@ footer {
     }
 
     .na2-card-action {
-        margin-top: 0.45rem;
+        margin-top: auto;
         font-size: 0.5rem;
     }
 
     .na2-card-logo {
         top: 50%;
-        right: -2px;
+        left: -2px;
         width: 154px;
         height: 96px;
         padding: 0.75rem 0.55rem;

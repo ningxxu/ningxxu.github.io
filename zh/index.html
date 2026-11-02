@@ -79,7 +79,7 @@
 					<div class="project-card tinkering-card project-card--coming">
 						<span class="tinkering-card-art">
 							<span class="tinkering-card-contact-details">
-								<span class="tinkering-card-contact-title">联系</span>
+								<span class="tinkering-card-contact-title">联系我</span>
 								<span>instagram:</span>
 								<span>ningxxu.nl</span>
 								<span>whatsapp:</span>
@@ -89,34 +89,18 @@
 							</span>
 							<img src="../img/avatar-tinkering.png" alt="">
 						</span>
-						<span class="tinkering-card-copy">
-							<span class="project-title">流动的语言与归属感</span>
+						<div class="tinkering-card-copy">
+							<div class="tinkering-card-heading">
+								<span class="project-title">流动的语言与归属感</span>
+							</div>
 							<span class="tinkering-card-details">
+								<span class="tinkering-card-status">筹备中：</span>
 								<span>🥭 <b>食物与语言工作坊</b>：追寻“mango/芒果”、“金桔/kumquat”这样的词语，看食物如何穿梭于不同地域、语言与文化之间</span>
 								<span>🧭 <b>移民与身份认同研究</b>：探索语言、归属感、歧视与家庭生活如何塑造移民的经历</span>
 								<span>🌱 <b>中文荷兰语课</b>：理解荷兰语，并自在地将它运用到日常生活中</span>
 							</span>
-						</span>
+						</div>
 					</div>
-				</div>
-			</section>
-
-			<section id="building" class="projects projects--writing" aria-labelledby="building-title">
-				<div class="section-heading">
-					<h2 id="building-title">创造</h2>
-				</div>
-
-				<div class="project-grid project-grid--na2">
-					<a class="project-card na2-card" href="https://na2.studio" target="_blank" rel="noreferrer">
-						<span class="na2-card-copy">
-							<span class="project-title" lang="en">na2</span>
-							<span class="project-note">我是 na2 的一员。它是一家小型独立工作室，制作有想法的数字产品、好玩的网页实验，偶尔也做点艺术。</span>
-							<span class="na2-card-action">访问 na2.studio <span aria-hidden="true">↗</span></span>
-						</span>
-						<span class="na2-card-logo" aria-hidden="true">
-							<img src="../img/na2-logo-simple.png" alt="">
-						</span>
-					</a>
 				</div>
 			</section>
 
@@ -158,6 +142,25 @@
 					</a>
 				</div>
 			</section>
+
+			<section id="building" class="projects projects--writing" aria-labelledby="building-title">
+				<div class="section-heading">
+					<h2 id="building-title">创造</h2>
+				</div>
+
+				<div class="project-grid project-grid--na2">
+					<a class="project-card na2-card" href="https://na2.studio" target="_blank" rel="noreferrer">
+						<span class="na2-card-copy">
+							<span class="project-title" lang="en">na2</span>
+							<span class="project-note">我是 na2 的一员。它是一家小型独立工作室，制作有想法的数字产品、好玩的网页实验，偶尔也做点艺术。</span>
+							<span class="na2-card-action">访问 na2.studio <span aria-hidden="true">↗</span></span>
+						</span>
+						<span class="na2-card-logo" aria-hidden="true">
+							<img src="../img/na2-logo-simple.png" alt="">
+						</span>
+					</a>
+				</div>
+			</section>
 		</main>
 
 		<hr>
@@ -175,7 +178,7 @@
 		</footer>
 
 		<script>
-			// Sticky reveal toggles for hover and touch.
+			// Sticky reveal toggles for hover and touch. Contact hover also toggles the profile.
 			document.addEventListener('DOMContentLoaded', function() {
 				var logo = document.querySelector('.logo');
 				if (logo) {
@@ -196,11 +199,13 @@
 					tinkeringArt.addEventListener('pointerenter', function(e) {
 						if (e.pointerType === 'mouse') {
 							tinkeringArt.classList.toggle('is-revealed');
+							if (logo) logo.classList.toggle('is-revealed');
 						}
 					});
 					tinkeringArt.addEventListener('pointerdown', function(e) {
 						if (e.pointerType !== 'mouse') {
 							tinkeringArt.classList.toggle('is-revealed');
+							if (logo) logo.classList.toggle('is-revealed');
 						}
 					});
 				}

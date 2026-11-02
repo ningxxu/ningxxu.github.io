@@ -79,7 +79,7 @@
 					<div class="project-card tinkering-card project-card--coming">
 						<span class="tinkering-card-art">
 							<span class="tinkering-card-contact-details">
-								<span class="tinkering-card-contact-title">Contact</span>
+								<span class="tinkering-card-contact-title">Neem contact op</span>
 								<span>instagram:</span>
 								<span>ningxxu.nl</span>
 								<span>whatsapp:</span>
@@ -89,34 +89,18 @@
 							</span>
 							<img src="../img/avatar-tinkering.png" alt="">
 						</span>
-						<span class="tinkering-card-copy">
-							<span class="project-title">Woorden &amp; Thuishoren</span>
+						<div class="tinkering-card-copy">
+							<div class="tinkering-card-heading">
+								<span class="project-title">Woorden &amp; Thuishoren</span>
+							</div>
 							<span class="tinkering-card-details">
+								<span class="tinkering-card-status">In ontwikkeling:</span>
 								<span>🥭 <b>Workshops over eten &amp; taal</b>: volg woorden zoals “mango/芒果”, “金桔/kumquat” terwijl eten tussen plekken, talen en culturen reist</span>
 								<span>🧭 <b>Onderzoek naar migratie &amp; identiteit</b>: verken hoe taal, ergens bij horen, discriminatie en het gezinsleven de ervaringen van immigranten vormen</span>
 								<span>🌱 <b>Nederlandse les in het Chinees</b>: leer Nederlands begrijpen en voel je op je gemak om het in het dagelijks leven te gebruiken</span>
 							</span>
-						</span>
+						</div>
 					</div>
-				</div>
-			</section>
-
-			<section id="building" class="projects projects--writing" aria-labelledby="building-title">
-				<div class="section-heading">
-					<h2 id="building-title">Creëren</h2>
-				</div>
-
-				<div class="project-grid project-grid--na2">
-					<a class="project-card na2-card" href="https://na2.studio" target="_blank" rel="noreferrer">
-						<span class="na2-card-copy">
-							<span class="project-title">na2</span>
-							<span class="project-note">Ik ben onderdeel van na2, een kleine indie studio die doordachte digitale producten, speelse webexperimenten en af en toe kunst maakt.</span>
-							<span class="na2-card-action">Bezoek na2.studio <span aria-hidden="true">↗</span></span>
-						</span>
-						<span class="na2-card-logo" aria-hidden="true">
-							<img src="../img/na2-logo-simple.png" alt="">
-						</span>
-					</a>
 				</div>
 			</section>
 
@@ -158,6 +142,25 @@
 					</a>
 				</div>
 			</section>
+
+			<section id="building" class="projects projects--writing" aria-labelledby="building-title">
+				<div class="section-heading">
+					<h2 id="building-title">Creëren</h2>
+				</div>
+
+				<div class="project-grid project-grid--na2">
+					<a class="project-card na2-card" href="https://na2.studio" target="_blank" rel="noreferrer">
+						<span class="na2-card-copy">
+							<span class="project-title">na2</span>
+							<span class="project-note">Ik ben onderdeel van na2, een kleine indie studio die doordachte digitale producten, speelse webexperimenten en af en toe kunst maakt.</span>
+							<span class="na2-card-action">Bezoek na2.studio <span aria-hidden="true">↗</span></span>
+						</span>
+						<span class="na2-card-logo" aria-hidden="true">
+							<img src="../img/na2-logo-simple.png" alt="">
+						</span>
+					</a>
+				</div>
+			</section>
 		</main>
 
 		<hr>
@@ -175,7 +178,7 @@
 		</footer>
 
 		<script>
-			// Sticky reveal toggles for hover and touch.
+			// Sticky reveal toggles for hover and touch. Contact hover also toggles the profile.
 			document.addEventListener('DOMContentLoaded', function() {
 				var logo = document.querySelector('.logo');
 				if (logo) {
@@ -196,11 +199,13 @@
 					tinkeringArt.addEventListener('pointerenter', function(e) {
 						if (e.pointerType === 'mouse') {
 							tinkeringArt.classList.toggle('is-revealed');
+							if (logo) logo.classList.toggle('is-revealed');
 						}
 					});
 					tinkeringArt.addEventListener('pointerdown', function(e) {
 						if (e.pointerType !== 'mouse') {
 							tinkeringArt.classList.toggle('is-revealed');
+							if (logo) logo.classList.toggle('is-revealed');
 						}
 					});
 				}

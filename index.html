@@ -79,7 +79,7 @@
 					<div class="project-card tinkering-card project-card--coming">
 						<span class="tinkering-card-art">
 							<span class="tinkering-card-contact-details">
-								<span class="tinkering-card-contact-title">Contact</span>
+								<span class="tinkering-card-contact-title">Get in touch</span>
 								<span>instagram:</span>
 								<span>ningxxu.nl</span>
 								<span>whatsapp:</span>
@@ -89,14 +89,17 @@
 							</span>
 							<img src="./img/avatar-tinkering.png" alt="">
 						</span>
-						<span class="tinkering-card-copy">
-							<span class="project-title">Words &amp; Belonging</span>
+						<div class="tinkering-card-copy">
+							<div class="tinkering-card-heading">
+								<span class="project-title">Words &amp; Belonging</span>
+							</div>
 							<span class="tinkering-card-details">
+								<span class="tinkering-card-status">In the works:</span>
 								<span>🥭 <b>Food &amp; language workshops</b>: follow words such as “mango/芒果”, “金桔/kumquat” as food travels between places, languages, and cultures</span>
 								<span>🧭 <b>Migration &amp; identity research</b>: explore how language, belonging, discrimination, and family life shape immigrant experiences</span>
 								<span>🌱 <b>Dutch lessons in Chinese</b>: learn to understand Dutch and feel comfortable using it in everyday life</span>
 							</span>
-						</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -175,9 +178,10 @@
 		</footer>
 
 		<script>
-			// Sticky reveal toggles for hover and touch.
+			// Sticky reveal toggles for hover and touch. Contact hover also toggles the profile.
 			document.addEventListener('DOMContentLoaded', function() {
 				var logo = document.querySelector('.logo');
+				var tinkeringArt = document.querySelector('.tinkering-card-art');
 				if (logo) {
 					logo.addEventListener('pointerenter', function(e) {
 						if (e.pointerType === 'mouse') {
@@ -191,16 +195,17 @@
 					});
 				}
 
-				var tinkeringArt = document.querySelector('.tinkering-card-art');
 				if (tinkeringArt) {
 					tinkeringArt.addEventListener('pointerenter', function(e) {
 						if (e.pointerType === 'mouse') {
 							tinkeringArt.classList.toggle('is-revealed');
+							if (logo) logo.classList.toggle('is-revealed');
 						}
 					});
 					tinkeringArt.addEventListener('pointerdown', function(e) {
 						if (e.pointerType !== 'mouse') {
 							tinkeringArt.classList.toggle('is-revealed');
+							if (logo) logo.classList.toggle('is-revealed');
 						}
 					});
 				}
